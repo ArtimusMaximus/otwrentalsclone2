@@ -1,0 +1,46 @@
+ul {
+  list-style-type: none;
+  background-color: #fbb995;
+  border-radius: 10px;
+  width: 150px;
+  margin: 25px;
+  padding: 15px;
+}
+
+.App {
+  background-color: whitesmoke;
+  height: fit-content;
+  overflow-y: auto;
+  
+  overflow-x: hidden;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 95px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 180px; */
+  flex-wrap: wrap;
+  align-content: flex-start;
+  
+}
+
+
+
+
+
+/* .pix {
+  background-image: url('../palm-trees-sky-photography-1920x1080.jpg');
+  background-size: 24%;
+  background-repeat: none;
+} */
+
+
+
+
+
+
+
+
