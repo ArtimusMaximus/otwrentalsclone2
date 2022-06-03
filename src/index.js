@@ -10,6 +10,7 @@ import ColoradoRiver from './components/content/ColoradoRiver';
 import ColoImages from './components/content/ColoImages';
 import RanchoMirage from './components/content/RanchoMirage';
 import LakeArrowHead from './components/content/LakeArrowhead';
+import LakeArrowImages from './components/content/LakeArrowImages';
 
 
 
@@ -23,7 +24,7 @@ root.render(
         <Route path="/sealbeach" element={<SealBeach />} />
         <Route path="/coloradoriver" element={<ColoradoRiver images={<ColoImages />} />} />
         <Route path="/ranchomirage" element={<RanchoMirage />} />
-        <Route path="/lakearrowhead" element={<LakeArrowHead />} />
+        <Route path="/lakearrowhead" element={<LakeArrowHead images={<LakeArrowImages />} />} />
       </Route>
     </Routes>
   </BrowserRouter>

@@ -1,10 +1,13 @@
 import React from 'react';
+import Sidebar from '../Sidebar';
 
 
 function SealBeach() {
     return (
         <>
-        <div className="container">
+        <div className="row">
+            <Sidebar />
+        <div className="container col-6 float-left row">
             <h1>
                 SEAL BEACH, CALIFORNIA VACATION HOME
             </h1>
@@ -34,6 +37,7 @@ function SealBeach() {
             <p>
                 
             </p>
+        </div>
         </div>
         </>
     )

@@ -10,25 +10,10 @@ function App() {
     <>
     <Navbar />
     <div className="App">
-    
-    
-    
-
-      
-      
-      
-
       <Outlet />
-
-    
-    
-    
       <Footer />
-
     </div> 
-      
-      
-      </>
+    </>
   );
 }
 

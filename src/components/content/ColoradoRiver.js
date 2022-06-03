@@ -7,7 +7,7 @@ function ColoradoRiver(props) {
         <>
         <div className='row'>
             <Sidebar />
-        <div className="container col-4 float-left row">
+        <div className="container col-6 float-left row">
             
         
             <h1>
@@ -44,7 +44,7 @@ function ColoradoRiver(props) {
             </p>
             
         </div>
-        <div className="container col-6">
+        <div className="align-content-top float-right">
             {props.images}
         </div>
         </div>

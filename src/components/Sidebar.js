@@ -23,7 +23,7 @@ function Sidebar() {
                     <Link to="/ranchomirage">Rancho Mirage</Link>
                 </li>
                 <li>
-                    <Link to="/lakearrowhead">Lake Arrowhead, CA</Link>
+                    <Link to="/lakearrowhead">Lake Arrowhead</Link>
                 </li>
             </ul>
         </div>

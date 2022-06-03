@@ -5,8 +5,9 @@ import Sidebar from '../Sidebar';
 function HomeContent() {
     return (
         <>
-        
-        <div className="container">    
+        <div className="row">
+            <Sidebar />
+        <div className="col-6 float-left">    
             <h1>
                 Best Beach House Rentals
                 in the USA
@@ -16,6 +17,7 @@ function HomeContent() {
 
                 For more information, please surf our web site or contact us at your convenience. We will be happy to answer any questions you may have.
             </p>
+        </div>
         </div>
         </>
     )

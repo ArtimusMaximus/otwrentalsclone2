@@ -1,10 +1,13 @@
 import React from 'react';
+import Sidebar from '../Sidebar';
 
 
 function RanchoMirage() {
     return (
         <>
-        <div className="container col-6">
+        <div className="row">
+            <Sidebar />
+        <div className="container col-6 float-left row">
             <h1>
                 RANCHO MIRAGE HILLTOP MASTERPIECE 
             </h1>
@@ -27,6 +30,7 @@ function RanchoMirage() {
             <div>photos</div>
             <div>photos</div>
             
+        </div>
         </div>
         </>
     )
