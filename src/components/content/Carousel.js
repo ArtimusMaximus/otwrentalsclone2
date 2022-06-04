@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
-import { ModalBody } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import img0 from "./images/lakearrowimages/1.webp";
 import img1 from "./images/lakearrowimages/10.webp";
 import img2 from "./images/lakearrowimages/11.webp";
@@ -46,7 +47,8 @@ import img40 from "./images/lakearrowimages/9.webp";
 
 export default () => {
 
-    const arr = [img0,  img1,  img2,  img3,
+    const arr = [
+        img0,  img1,  img2,  img3,
         img4,  img5,  img6,  img7,
         img8,  img9,  img10, img11,
         img12, img13, img14, img15,
@@ -56,32 +58,32 @@ export default () => {
         img28, img29, img30, img31,
         img32, img33, img34, img35,
         img36, img37, img38, img39,
-        img40]
+        img40
+    ];
 
-    const [showModal, setShowModal] = useState(false)
-    const [modalData, setModalData] = useState(null)
+    const styles = {
+        height: '100%'
+    }
+    
 
-
-    
-    
-    
+// showThumbs needs the images to build the thumbs
     return (
-      <>
-      <div className="row">
-        {arr.map((image, i) => {
-            return (
-            <div key={i}>
-                <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(image)}}>
-                    <img className="img-fluid" src={image} style={{height: '50px', width: '75px', margin: '5px', borderRadius: '5px'}} />
-                </a>
-            </div>
-            )
-        })}
-      </div>
-      <Modal size="lg" show={showModal} onHide={() => setShowModal(false)} >
-          <Modal.Body>{<img src={modalData} style={{height: '500px', margin: '5px', borderRadius: '5px'}} />}</Modal.Body>
-      </Modal>
-
-      </>  
+        <>
+        <div className='col-12 col-md-6 col-lg-6'>
+            <Carousel autoFocus={true} dynamicHeight={true} emulateTouch={true} autoPlay={true} interval={2000} showThumbs={false} showIndicators={false}> 
+                {
+                    arr.map((img, i) => {
+                        return (
+                            <div key={i}>
+                                <div>
+                                    <img src={img} style={styles} />
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </Carousel>
+        </div>
+        </>
     )
 }

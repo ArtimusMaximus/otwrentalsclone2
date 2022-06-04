@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/" element={<App images={<LakeArrowImages />} />}>
         <Route path="/home" element={<HomeContent />} /> 
         <Route path="/sunsetbeach" element={<SunsetBeach />} />
         <Route path="/sealbeach" element={<SealBeach />} />

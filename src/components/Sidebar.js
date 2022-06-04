@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './sidebar.css' 
 
 
 function Sidebar() {
     return (
         <>
-        <div className="sidebar">
-            <ul>
+        <div className="sidebar d-none d-md-block">
+            <ul className='uul'>
                 <li>
                     <Link to="/home">Home</Link>
                 </li>

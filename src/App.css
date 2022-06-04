@@ -1,13 +1,9 @@
 ul {
-  list-style-type: none;
-  background-color: #fbb995;
-  border-radius: 10px;
-  width: 150px;
-  margin: 25px;
-  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 }
-
-.App {
+ .App {
   background-color: whitesmoke;
   height: fit-content;
   overflow-y: auto;
@@ -16,18 +12,19 @@ ul {
   margin: 5px;
   padding: 5px;
   margin-bottom: 95px;
-}
+} 
 
-.container {
+ /* .container {
   display: flex;
   flex-direction: column;
   /* margin-left: 180px; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   align-content: flex-start;
   margin: 10px;
-}
+  }
+ */
 
-
+ 
 
 
 

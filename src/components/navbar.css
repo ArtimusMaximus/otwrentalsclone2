@@ -1,6 +1,11 @@
-.Navbar {
-    height: 150px;
+.navbar {
+    height: 155px;
     background-color: #95d6fa;
-    margin: 0;
+    margin: 0px;
+    padding: 15px;
+}
+
+.ulist {
+    list-style-type: none;
 }
 
