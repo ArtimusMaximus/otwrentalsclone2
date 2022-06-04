@@ -6,7 +6,7 @@ function HomeContent() {
     return (
         <>
         <div className="row">
-            <Sidebar />
+            
         <div className="col-6 float-left">    
             <h1>
                 Best Beach House Rentals

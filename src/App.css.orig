@@ -1,0 +1,57 @@
+ul {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+<<<<<<< HEAD
+
+/* .App {
+=======
+ .App {
+>>>>>>> 227fe0cd863ade0f7755427f38d6025fde48c44e
+  background-color: whitesmoke;
+  height: fit-content;
+  overflow-y: auto;
+  
+  overflow-x: hidden;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 95px;
+} 
+
+ /* .container {
+  display: flex;
+  flex-direction: column;
+<<<<<<< HEAD
+  margin-left: 180px; */
+  /* flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 10px;
+} */
+
+=======
+  /* margin-left: 180px; */
+  /* flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 10px;
+  }
+ */
+>>>>>>> 227fe0cd863ade0f7755427f38d6025fde48c44e
+
+ 
+
+
+
+/* .pix {
+  background-image: url('../palm-trees-sky-photography-1920x1080.jpg');
+  background-size: 24%;
+  background-repeat: none;
+} */
+
+
+
+
+
+
+
+

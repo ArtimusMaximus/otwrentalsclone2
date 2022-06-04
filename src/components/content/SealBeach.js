@@ -6,7 +6,7 @@ function SealBeach() {
     return (
         <>
         <div className="row">
-            <Sidebar />
+            
         <div className="container col-6 float-left row">
             <h1>
                 SEAL BEACH, CALIFORNIA VACATION HOME

@@ -7,5 +7,9 @@
 
 .ulist {
     list-style-type: none;
+    margin-right:55px;
 }
 
+.caret {
+    display: none;
+}

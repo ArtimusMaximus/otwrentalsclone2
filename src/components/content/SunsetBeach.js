@@ -6,12 +6,11 @@ function SunsetBeach() {
     return (
         <>
         <div className="row">
-            <Sidebar />
+            
         <div className="container col-6 float-left row">
             <h1>
                 SUNSET BEACH VACATION HOMES
 
-                
             </h1>
             <h3>
             16525 S. Pacific Ave., Sunset Beach

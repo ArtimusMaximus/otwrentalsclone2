@@ -1,12 +1,13 @@
 import React from 'react';
 import Sidebar from '../Sidebar';
-import Carousel from './Carousel';
+import Carousel from './carousels/LakeArrowCarousel';
+import VirtualTour from '../VirtualTour';
 
 function LakeArrowHead(props) {
     return (
         <>
       
-        <div className=''>
+        <div className='container text-center'>
             
         <div className="">
             <h2>
@@ -18,7 +19,9 @@ function LakeArrowHead(props) {
             <h5>
                 28961 North Shore Rd., Lake Arrowhead, California   
             </h5>
-            
+            <Carousel />
+            <hr />
+            <VirtualTour />
             <hr />
             <p>
                 PERMITTED and LEGAL Rental. This three-story luxury home is nestled in a gated community upon a lush hillside property. Our home is lakefront with a short 100 yard walk to our own single slip dock. Lake Arrowhead is a private lake. For boat charters and water skiing, BEST option is to make arrangements with Mckenzie Water Ski School and they are fantastic! https://mckenziewaterskischool.com/ They can do boat charters, tours, skiing, wake board..etc!

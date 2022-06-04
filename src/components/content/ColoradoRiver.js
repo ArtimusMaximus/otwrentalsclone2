@@ -6,7 +6,7 @@ function ColoradoRiver(props) {
     return (
         <>
         <div className='row'>
-            <Sidebar />
+            
         <div className="container col-6 float-left row">
             
         

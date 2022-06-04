@@ -6,7 +6,7 @@ function RanchoMirage() {
     return (
         <>
         <div className="row">
-            <Sidebar />
+            
         <div className="container col-6 float-left row">
             <h1>
                 RANCHO MIRAGE HILLTOP MASTERPIECE 
