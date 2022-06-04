@@ -12,6 +12,7 @@ function Navbar() {
         <>
         <div className="row navbar">
         <span className="logo"><img src={logo} style={{margin: '5px'}} /></span>
+        <div className='d-none d-lg-block d-xl-block d-xxl-block'>
         <Link to="/">Home</Link>
         <Link to="/sunsetbeach">Sunset Beach</Link>
         <Link to="/sealbeach">Seal Beach</Link>
@@ -19,9 +20,9 @@ function Navbar() {
         <Link to="/coloradoriver">Colorado River</Link>
         <Link to="/ranchomirage">Rancho Mirage</Link>
         <Link to="/virtualtours">Virtual Tours</Link>
-        
+        </div>
 
-        <div className='d-md-none'>
+        <div className='d-lg-none'>
             
             <Dropdown>
                 <Dropdown.Toggle variant="link" bsPrefix="p-0">
