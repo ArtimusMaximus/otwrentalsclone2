@@ -81,10 +81,41 @@ export default () => {
         img55, img56, img57, img58
     ];
 
+    const styles = {
+        height: '100%'
+    };
+
+    //<div className='col-12 col-md-6 col-lg-6'> removed
 
     return (
         <>
         
+        
+            <Carousel 
+                autoFocus={true} 
+                dynamicHeight={true} 
+                emulateTouch={true} 
+                autoPlay={true} 
+                interval={2000} 
+                showThumbs={false} 
+                showIndicators={false}
+                width={'100%'}
+            > 
+                {
+                    arr.map((img, i) => {
+                        return (
+                            <div key={i}>
+                                <div>
+                                    <img src={img} style={styles} />
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </Carousel>
+        
+        
+
         </>
     )
 }

@@ -27,9 +27,27 @@ export default () => {
         img12, img13
     ];
 
+    const styles = {
+        height: '100%'
+    }
+
     return (
         <>
-        
+            <div className='col-12 col-md-6 col-lg-6'>
+                <Carousel autoFocus={true} dynamicHeight={true} emulateTouch={true} autoPlay={true} interval={2000} showThumbs={false} showIndicators={false}> 
+                    {
+                        arr.map((img, i) => {
+                            return (
+                                <div key={i}>
+                                    <div>
+                                        <img src={img} style={styles} />
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </Carousel>
+            </div>
         </>
     )
 }

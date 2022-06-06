@@ -3,6 +3,7 @@
     background-color: #95d6fa;
     margin: 0px;
     padding: 15px;
+    
 }
 
 .ulist {
@@ -10,6 +11,34 @@
     margin-right:55px;
 }
 
-.caret {
-    display: none;
+
+
+.around {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px;
+    border-color: black;
 }
+
+.around:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: whitesmoke;
+    border-color:whitesmoke;
+}
+
+.dd {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dd:hover {
+    text-decoration: none;
+    color: inherit;
+}
+

@@ -5,40 +5,53 @@ import logo from './content/images/otwlogo.gif';
 import { GoGrabber } from 'react-icons/go';
 import UnopDropdown from 'unop-react-dropdown';
 import Dropdown from 'react-bootstrap/Dropdown'
+import { removeData } from 'jquery';
 
 
 function Navbar() {
+    const styles = {
+       textDecoration: 'none',
+       color: 'inherit'
+    }
+
+
+
     return (
         <>
+        
         <div className="row navbar">
-        <span className="logo"><img src={logo} style={{margin: '5px'}} /></span>
-        <div className='d-none d-lg-block d-xl-block d-xxl-block'>
-        <Link to="/">Home</Link>
-        <Link to="/sunsetbeach">Sunset Beach</Link>
-        <Link to="/sealbeach">Seal Beach</Link>
-        <Link to="/lakearrowhead">Lake Arrowhead</Link>
-        <Link to="/coloradoriver">Colorado River</Link>
-        <Link to="/ranchomirage">Rancho Mirage</Link>
-        <Link to="/virtualtours">Virtual Tours</Link>
-        </div>
-
-        <div className='d-lg-none'>
+            <div className='container-fluid d-flex'>
+                <span className="logo"><img src={logo} style={{margin: '5px'}} /></span>
+                <div className='d-none d-lg-block d-xl-block d-xxl-block mr-auto'>
+                
+                    <Link className='around' to="/">Home</Link>
+                    <Link className='around' to="/sunsetbeach">Sunset Beach</Link>
+                    <Link className='around' to="/sealbeach">Seal Beach</Link>
+                    <Link className='around' to="/lakearrowhead">Lake Arrowhead</Link>
+                    <Link className='around' to="/coloradoriver">Colorado River</Link>
+                    <Link className='around' to="/ranchomirage">Rancho Mirage</Link>
+                    <Link className='around' to="/virtualtours">Virtual Tours</Link>
+                </div>
             
-            <Dropdown>
-                <Dropdown.Toggle variant="link" bsPrefix="p-0">
-                    <GoGrabber size={100} />
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                    <Dropdown.Item><Link to="/">Home</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/sunsetbeach">Sunset Beach</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/sealbeach">Seal Beach</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/lakearrowhead">Lake Arrowhead</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/coloradoriver">Colorado River</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/ranchomirage">Rancho Mirage</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/virtualtours">Virtual Tours</Link></Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            
+        
+            <div className='d-lg-none d-flex justify-content-between'>
+                
+                <Dropdown className='ddm'>
+                    <Dropdown.Toggle variant="link" bsPrefix="p-0">
+                        <GoGrabber className='ddm' size={100} />
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item><Link className='dd' to="/">Home</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/sunsetbeach">Sunset Beach</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/sealbeach">Seal Beach</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/lakearrowhead">Lake Arrowhead</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/coloradoriver">Colorado River</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/ranchomirage">Rancho Mirage</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/virtualtours">Virtual Tours</Link></Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                
+            </div>
         </div>
         </div>
         </>

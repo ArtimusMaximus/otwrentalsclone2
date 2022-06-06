@@ -61,7 +61,17 @@ export default () => {
     const [showModal, setShowModal] = useState(false)
     const [modalData, setModalData] = useState(null)
 
-
+    const thumbStyles = {
+        height: '50px',
+        width: '75px',
+        margin: '5px',
+        borderRadius: '5px'
+    };
+    const modalStyles = {
+        height: '500px',
+        margin: '5px',
+        borderRadius: '5px'
+    }
     
     
     
@@ -72,14 +82,14 @@ export default () => {
             return (
             <div key={i}>
                 <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(image)}}>
-                    <img className="img-fluid" src={image} style={{height: '50px', width: '75px', margin: '5px', borderRadius: '5px'}} />
+                    <img className="img-fluid" src={image} style={{thumbStyles}} />
                 </a>
             </div>
             )
         })}
       </div>
       <Modal size="lg" show={showModal} onHide={() => setShowModal(false)} >
-          <Modal.Body>{<img src={modalData} style={{height: '500px', margin: '5px', borderRadius: '5px'}} />}</Modal.Body>
+          <Modal.Body>{<img src={modalData} style={{modalStyles}} />}</Modal.Body>
       </Modal>
 
       </>  

@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../Sidebar';
-import Carousel from './carousels/LakeArrowCarousel';
+import LakeArrowCarousel from './carousels/LakeArrowCarousel';
 import VirtualTour from '../VirtualTour';
 
 function LakeArrowHead(props) {
@@ -19,7 +19,9 @@ function LakeArrowHead(props) {
             <h5>
                 28961 North Shore Rd., Lake Arrowhead, California   
             </h5>
-            <Carousel />
+            <div className='d-flex justify-content-center'>
+            <LakeArrowCarousel />
+            </div>
             <hr />
             <VirtualTour />
             <hr />
