@@ -7,7 +7,7 @@ import Carousel from './components/content/carousels/LakeArrowCarousel';
 import VirtualTour from './components/VirtualTour';
 
 
-function App(props) {
+function App() {
   return (
     <>
       <Navbar />

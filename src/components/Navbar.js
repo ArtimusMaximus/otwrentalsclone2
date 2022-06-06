@@ -20,9 +20,9 @@ function Navbar() {
         <>
         
         <div className="row navbar">
-            <div className='container-fluid d-flex'>
-                <span className="logo"><img src={logo} style={{margin: '5px'}} /></span>
-                <div className='d-none d-lg-block d-xl-block d-xxl-block mr-auto'>
+            <div className='d-flex align-items-center justify-content-center'>
+                <span className="logo"><img src={logo} style={{margin: '3px'}} /></span>
+                <div className='d-none d-lg-block d-xl-block d-xxl-block mr-auto align-items-center justify-content-center'>
                 
                     <Link className='around' to="/">Home</Link>
                     <Link className='around' to="/sunsetbeach">Sunset Beach</Link>
@@ -34,7 +34,7 @@ function Navbar() {
                 </div>
             
         
-            <div className='d-lg-none d-flex justify-content-between'>
+            <div className='d-lg-none d-flex justify-content-center align-items-center'>
                 
                 <Dropdown className='ddm'>
                     <Dropdown.Toggle variant="link" bsPrefix="p-0">
@@ -48,6 +48,7 @@ function Navbar() {
                         <Dropdown.Item><Link className='dd' to="/coloradoriver">Colorado River</Link></Dropdown.Item>
                         <Dropdown.Item><Link className='dd' to="/ranchomirage">Rancho Mirage</Link></Dropdown.Item>
                         <Dropdown.Item><Link className='dd' to="/virtualtours">Virtual Tours</Link></Dropdown.Item>
+                        <Dropdown.Item><Link className='dd' to="/contactinfo">Contact Info</Link></Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 

@@ -11,6 +11,7 @@ import ColoImages from './components/content/ColoImages';
 import RanchoMirage from './components/content/RanchoMirage';
 import LakeArrowHead from './components/content/LakeArrowhead';
 import LakeArrowImages from './components/content/LakeArrowImages';
+import ContactInfo from './components/content/ContactInfo';
 
 
 
@@ -18,13 +19,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App images={<LakeArrowImages />} />}>
-        <Route path="/home" element={<HomeContent />} /> 
+      <Route path="/" element={<App />}>
+        <Route path="/" element={<HomeContent />} /> 
         <Route path="/sunsetbeach" element={<SunsetBeach />} />
         <Route path="/sealbeach" element={<SealBeach />} />
         <Route path="/coloradoriver" element={<ColoradoRiver images={<ColoImages />} />} />
         <Route path="/ranchomirage" element={<RanchoMirage />} />
         <Route path="/lakearrowhead" element={<LakeArrowHead images={<LakeArrowImages />} />} />
+        <Route path="/contactinfo" element={<ContactInfo />} />
       </Route>
     </Routes>
   </BrowserRouter>

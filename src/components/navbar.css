@@ -42,3 +42,12 @@
     color: inherit;
 }
 
+.ddm {
+    text-decoration: none;
+    color: inherit;
+    
+}
+.ddm:hover {
+    text-decoration: none;
+    color: inherit;
+}

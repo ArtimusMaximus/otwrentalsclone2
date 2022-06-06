@@ -24,15 +24,18 @@ ul {
   }
  */
 
- 
-
-
-
 /* .pix {
   background-image: url('../palm-trees-sky-photography-1920x1080.jpg');
   background-size: 24%;
   background-repeat: none;
 } */
+
+
+@media only screen and  (max-width: 600px) {
+  .App { 
+    margin-bottom: 0px;
+  }
+}
 
 
 
