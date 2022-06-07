@@ -68,7 +68,6 @@ function HomeContent() {
                 </div>
             </div>
 
-
             <div className="col-12 col-md-6 col-lg-6">    
                 <h1>
                     Best Beach House Rentals
@@ -80,10 +79,8 @@ function HomeContent() {
                     For more information, please surf our web site or contact us at your convenience. We will be happy to answer any questions you may have.
                 </p>
             </div>
-
             
         </div>
-        
         </>
     )
 }

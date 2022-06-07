@@ -10,10 +10,15 @@ function SunsetBeach() {
     const styles = {
         height: '225px'
     }
+    const figureStyles = {
+        overflow: 'hidden',
+        backgroundSize: 'contain',
+        
+    }
     
     return (
         <>
-        <div className='row justify-content-center d-flex'>
+        <div className='row justify-content-center d-flex text-center'>
                 <h1>
                     SUNSET BEACH VACATION HOMES
                 </h1>
@@ -24,19 +29,19 @@ function SunsetBeach() {
                 </h3>  
         </div>
         <div className="row">
-            <div className="col-12 col-md-6 col-lg-6 justify-content-center">
+            <div className="col-12 col-md-6 col-lg-6 justify-content-center d-flex p-0">
             <Link to="/sunsetbeach1">
-                <figure className='m-0 p-0'>
+                <figure className='m-1' style={figureStyles}>
                     <figcaption>Three Bedroom, Two Bath</figcaption>
-                <img src={img2} style={styles} />
+                    <img src={img2} style={styles} />
                 </figure>
             </Link>
             </div>
-            <div className='col-12 col-md-6 col-lg-6 justify content-center'>
+            <div className='col-12 col-md-6 col-lg-6 justify-content-center d-flex p-0'>
             <Link to="/sunsetbeach2">
-                <figure className='m-0 p-0'>
+                <figure className='m-1' style={figureStyles}>
                     <figcaption>Five Bedroom, 4.5 Bath</figcaption>
-                <img src={imgtwo} style={styles} />
+                    <img src={imgtwo} style={styles} />
                 </figure>
             </Link>
             </div>
