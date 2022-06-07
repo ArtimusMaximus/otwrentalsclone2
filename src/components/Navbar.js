@@ -33,28 +33,28 @@ function Navbar() {
                     <Link className='around' to="/virtualtours">Virtual Tours</Link>
                 </div>
             
-        
-            <div className='d-lg-none d-flex justify-content-center align-items-center'>
-                
-                <Dropdown className='ddm'>
-                    <Dropdown.Toggle variant="link" bsPrefix="p-0">
-                        <GoGrabber className='ddm' size={100} />
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        <Dropdown.Item><Link className='dd' to="/">Home</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/sunsetbeach">Sunset Beach</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/sealbeach">Seal Beach</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/lakearrowhead">Lake Arrowhead</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/coloradoriver">Colorado River</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/ranchomirage">Rancho Mirage</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/virtualtours">Virtual Tours</Link></Dropdown.Item>
-                        <Dropdown.Item><Link className='dd' to="/contactinfo">Contact Info</Link></Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                
+        </div>
+            <div className='d-lg-none d-flex flex-row-reverse'>
+                <div className="p-2">
+                    <Dropdown className='ddm'>
+                        <Dropdown.Toggle variant="link" bsPrefix="p-0">
+                            <GoGrabber className='ddm' size={100} />
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/"><div className='wrap'>Home</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/sunsetbeach"><div className='wrap'>Sunset Beach</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/sealbeach"><div className='wrap'>Seal Beach</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/lakearrowhead"><div className='wrap'>Lake Arrowhead</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/coloradoriver"><div className='wrap'>Colorado River</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/ranchomirage"><div className='wrap'>Rancho Mirage</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/virtualtours"><div className='wrap'>Virtual Tours</div></Link></Dropdown.Item>
+                            <Dropdown.Item as={'li'}><Link className='dd' to="/contactinfo"><div className='wrap container-fluid'>Contact Info</div></Link></Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </div>
             </div>
         </div>
-        </div>
+        
         </>
     )
 }

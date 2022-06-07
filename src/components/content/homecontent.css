@@ -1,0 +1,24 @@
+.i {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .i {
+        
+    }
+}
+
+.figcap {
+    
+}
+
+.img1 {
+    width: 260px;
+    height: 150px;
+    
+}
+
+.figure1 {
+    overflow: hidden;
+    background-size: contain;
+}

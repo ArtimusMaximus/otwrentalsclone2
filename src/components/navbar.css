@@ -1,6 +1,6 @@
 .navbar {
     height: 155px;
-    background-color: #95d6fa;
+    /* background-color: #95d6fa; */
     margin: 0px;
     padding: 15px;
     
@@ -35,6 +35,7 @@
 .dd {
     text-decoration: none;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .dd:hover {
@@ -44,10 +45,23 @@
 
 .ddm {
     text-decoration: none;
-    color: inherit;
+    color: black;
     
 }
 .ddm:hover {
     text-decoration: none;
-    color: inherit;
+    color: whitesmoke;
+}
+
+.wrap {
+    text-align: center;
+}
+
+/* .wrap:hover {
+    background-color: aquamarine;
+} */
+
+.transparent {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
 }
