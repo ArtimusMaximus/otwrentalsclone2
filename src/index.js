@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import SunsetBeach from './components/content/SunsetBeach';
 import SealBeach from './components/content/SealBeach';
 import HomeContent from './components/content/HomeContent';
@@ -12,6 +12,7 @@ import RanchoMirage from './components/content/RanchoMirage';
 import LakeArrowHead from './components/content/LakeArrowhead';
 import LakeArrowImages from './components/content/LakeArrowImages';
 import ContactInfo from './components/content/ContactInfo';
+
 
 
 

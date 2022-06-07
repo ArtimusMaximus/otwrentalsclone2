@@ -14,11 +14,8 @@ function Navbar() {
        color: 'inherit'
     }
 
-
-
     return (
         <>
-        
         <div className="row navbar">
             <div className='d-flex align-items-center justify-content-center'>
                 <span className="logo"><img src={logo} style={{margin: '3px'}} /></span>
@@ -54,7 +51,6 @@ function Navbar() {
                 </div>
             </div>
         </div>
-        
         </>
     )
 }

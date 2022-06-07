@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar';
 import './homecontent.css';
+import { Link } from 'react-router-dom'
 import coloradoriver from './images/homepageimages/coloradoriver.jpg'
 import lakearrowhead from './images/homepageimages/lakearrow.jpg'
 import ranchomirage from './images/homepageimages/ranchomirage.jpg'
@@ -10,7 +11,8 @@ import sunsetb from './images/homepageimages/sunsetb.jpg'
 
 function HomeContent() {
     const styles = {
-        
+        textDecoration: 'none',
+        color: 'black'
     }
 
     return (
@@ -18,41 +20,50 @@ function HomeContent() {
         
         <div className="row">
             <div className='col-12 col-md-6 col-lg-6'>
-
                 <div className='row'>
                     <div className='col-12 col-md-12 col-lg-6 d-flex justify-content-center p-0'>
+                        <Link to="/sealbeach">
                         <figure className='figure1 m-1' style={styles}>
                             <img className='img1' src={sealbeach} style={styles} />
                             <figcaption className='figcap'>Seal Beach</figcaption>
                         </figure>
+                        </Link>
                     </div>
                     <div className='col-12 col-md-12 col-lg-6 d-flex justify-content-center p-0'>
+                        <Link to="/sunsetbeach">
                         <figure className='figure1 m-1' style={styles}>
                             <img className='img1' src={sunsetb} style={styles} />
                             <figcaption>Sunset Beach</figcaption>
                         </figure>
+                        </Link>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col-12 col-md-12 col-lg-6 d-flex justify-content-center p-0'>
+                        <Link to="/ranchomirage">
                         <figure className='figure1 m-1' style={styles}>
                             <img className='img1' src={ranchomirage} style={styles} />
                             <figcaption>Rancho Mirage</figcaption>
                         </figure>
+                        </Link>
                     </div>
                     <div className='col-12 col-md-12 col-lg-6 d-flex justify-content-center p-0'>
+                        <Link to="/coloradoriver">
                         <figure className='figure1 m-1' style={styles}>
                             <img className='img1' src={coloradoriver} style={styles} />
                             <figcaption>Colorado River</figcaption>
                         </figure>
+                        </Link>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col-12 d-flex justify-content-center'>
+                        <Link to="/lakearrowhead" style={styles}>
                         <figure className='figure1 m-1' style={styles}>
                             <img className='img1' src={lakearrowhead} style={styles} />
                             <figcaption>Lake Arrowhead</figcaption>
-                        </figure>                   
+                        </figure>                 
+                        </Link>  
                     </div>
                 </div>
             </div>
