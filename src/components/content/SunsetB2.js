@@ -72,7 +72,7 @@ export default () => {
         borderRadius: '5px'
     };
     const modalStyles = {
-        height: '500px',
+        width: '100%',
         margin: '5px',
         borderRadius: '5px'
     }

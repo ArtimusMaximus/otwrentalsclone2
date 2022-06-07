@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import Sidebar from '../Sidebar';
 import VirtualTour from '../VirtualTour';
 import RanchoCaro from './carousels/RanchoCaro';
 import img0 from "./images/ranchomirageimages/1.jpg"
@@ -90,7 +89,7 @@ function RanchoMirage() {
         borderRadius: '5px'
     };
     const modalStyles = {
-        height: '500px',
+        width: '100%',
         margin: '5px',
         borderRadius: '5px'
     }

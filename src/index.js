@@ -14,6 +14,10 @@ import LakeArrowImages from './components/content/LakeArrowImages';
 import ContactInfo from './components/content/ContactInfo';
 import SunsetB1 from './components/content/SunsetB1';
 import SunsetB2 from './components/content/SunsetB2';
+import ColoR1 from './components/content/ColoR1';
+import ColoR2 from './components/content/ColoR2';
+import NoLink from './components/content/images/NoLink';
+import AllToursVids from './components/AllToursVids';
 
 
 
@@ -27,10 +31,14 @@ root.render(
         <Route path="/sunsetbeach1" element={<SunsetB1 />} />
         <Route path="/sunsetbeach2" element={<SunsetB2 />} />
         <Route path="/sealbeach" element={<SealBeach />} />
-        <Route path="/coloradoriver" element={<ColoradoRiver images={<ColoImages />} />} />
+        <Route path="/coloradoriver" element={<ColoradoRiver />} />
+        <Route path="/coloradoriver1" element={<ColoR1 />} />
+        <Route path="/coloradoriver2" element={<ColoR2 />} />
         <Route path="/ranchomirage" element={<RanchoMirage />} />
-        <Route path="/lakearrowhead" element={<LakeArrowHead images={<LakeArrowImages />} />} />
+        <Route path="/lakearrowhead" element={<LakeArrowHead />} />
         <Route path="/contactinfo" element={<ContactInfo />} />
+        <Route path="/nolink" element={<NoLink />} />
+        <Route path="/3dtoursvids" element={<AllToursVids />} />
       </Route>
     </Routes>
   </BrowserRouter>

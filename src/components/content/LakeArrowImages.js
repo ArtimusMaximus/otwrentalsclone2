@@ -46,7 +46,8 @@ import img40 from "./images/lakearrowimages/9.webp";
 
 export default () => {
 
-    const arr = [img0,  img1,  img2,  img3,
+    const arr = [
+        img0,  img1,  img2,  img3,
         img4,  img5,  img6,  img7,
         img8,  img9,  img10, img11,
         img12, img13, img14, img15,
@@ -56,7 +57,8 @@ export default () => {
         img28, img29, img30, img31,
         img32, img33, img34, img35,
         img36, img37, img38, img39,
-        img40]
+        img40
+    ]
 
     const [showModal, setShowModal] = useState(false)
     const [modalData, setModalData] = useState(null)

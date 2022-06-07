@@ -4,19 +4,21 @@ import { ModalBody } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { useLocation } from 'react-router-dom';
 import './virtualtour.css';
+import NoLink from './content/images/NoLink';
 
 export default () => {
 
     let location = useLocation();
     const [showModal, setShowModal] = useState(false)
-    const [modalData, setModalData] = useState(null)
     const [matterPortData, setMatterPortData] = useState(null)
 
     const mpRanchoLink = "https://my.matterport.com/show/?m=ZEdd1jvH29x"
-
     const sunsetBeachLink1 = "https://my.matterport.com/show/?m=xZK8fEohnrn"
     const sunsetBeachLink2 = "https://my.matterport.com/show/?m=v7rzBd5KLPd"
-    const lakeArrowLink = 'aa'
+    const lakeArrowLink = "https://my.matterport.com/show/?m=e79yedmHEa3"
+    const lakeArrowLink2 = "https://my.matterport.com/show/?m=e79yedmHEa3"
+
+    const noLink = "/nolink"
 
 
     useEffect(() => {
@@ -30,7 +32,7 @@ export default () => {
         : location.pathname === '/sunsetbeach1' ? setMatterPortData(sunsetBeachLink1)
         : location.pathname === '/sunsetbeach2' ? setMatterPortData(sunsetBeachLink2)
         : location.pathname === '/lakearrowhead' ? setMatterPortData(lakeArrowLink)
-        : alert('Matterport error')
+        : setMatterPortData(noLink)
 
     }
 
@@ -64,7 +66,7 @@ export default () => {
                         <iframe src={matterPortData} style={iframeStyles}></iframe>
                     </div>
 
-                    }
+                }
             </Modal.Body>
         </Modal>
         </>

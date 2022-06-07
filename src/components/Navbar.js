@@ -17,9 +17,9 @@ function Navbar() {
     return (
         <>
         <div className="row navbar">
-            <div className='d-flex align-items-center justify-content-center'>
+            <div className='d-flex align-items-center justify-content-center col-lg-12 col-md-6 col-6'>
                 <span className="logo"><img src={logo} style={{margin: '3px'}} /></span>
-                <div className='d-none d-lg-block d-xl-block d-xxl-block mr-auto align-items-center justify-content-center'>
+                <div className='d-none d-lg-block d-xl-block d-xxl-block align-items-center justify-content-center'>
                 
                     <Link className='around' to="/">Home</Link>
                     <Link className='around' to="/sunsetbeach">Sunset Beach</Link>
@@ -27,10 +27,11 @@ function Navbar() {
                     <Link className='around' to="/lakearrowhead">Lake Arrowhead</Link>
                     <Link className='around' to="/coloradoriver">Colorado River</Link>
                     <Link className='around' to="/ranchomirage">Rancho Mirage</Link>
-                    <Link className='around' to="/virtualtours">Virtual Tours</Link>
+                    <Link className='around' to="/3dtoursvids">Virtual Tours</Link>
+
                 </div>
             
-        </div>
+            </div>
             <div className='d-lg-none d-flex flex-row-reverse'>
                 <div className="p-2">
                     <Dropdown className='ddm'>

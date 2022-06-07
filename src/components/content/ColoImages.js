@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal'
-import one from './images/1.jpg'
-import two from './images/2.jpg'
-import three from './images/3.jpg'
-import four from './images/4.jpg'
+import one from './images/coloradoriverimages/1.webp'
+import two from './images/coloradoriverimages/2.webp'
+import three from './images/coloradoriverimages/3.webp'
+import four from './images/coloradoriverimages/4.webp'
 
 
 export default () => {

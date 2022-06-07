@@ -33,7 +33,6 @@ export default () => {
 
     return (
         <>
-            <div className='col-12 col-md-6 col-lg-6'>
                 <Carousel autoFocus={true} dynamicHeight={true} emulateTouch={true} autoPlay={true} interval={2000} showThumbs={false} showIndicators={false}> 
                     {
                         arr.map((img, i) => {
@@ -47,7 +46,6 @@ export default () => {
                         })
                     }
                 </Carousel>
-            </div>
         </>
     )
 }

@@ -1,46 +1,97 @@
-import React from 'react';
-import Sidebar from '../Sidebar';
+import React, { useState } from 'react';
+import { Modal } from 'react-bootstrap';
+import VirtualTour from '../VirtualTour';
+import SealBeachCaro from './carousels/SealBeachCaro';
+import img0 from "./images/sealbeachimages/1.jpg"
+import img1 from "./images/sealbeachimages/10.jpg"
+import img2 from "./images/sealbeachimages/11.jpg"
+import img3 from "./images/sealbeachimages/12.jpg"
+import img4 from "./images/sealbeachimages/13.jpg"
+import img5 from "./images/sealbeachimages/14.jpg"
+import img6 from "./images/sealbeachimages/2.jpg"
+import img7 from "./images/sealbeachimages/3.jpg"
+import img8 from "./images/sealbeachimages/4.jpg"
+import img9 from "./images/sealbeachimages/5.jpg"
+import img10 from "./images/sealbeachimages/6.jpg"
+import img11 from "./images/sealbeachimages/7.jpg"
+import img12 from "./images/sealbeachimages/8.jpg"
+import img13 from "./images/sealbeachimages/9.jpg"
+
+const arr = [
+    img0, img1, img2,
+    img3, img4, img5,
+    img6, img7, img8,
+    img9, img10, img11,
+    img12, img13
+];
+
+export default () => {
+
+    const [modalData, setModalData] = useState(null)
+    const [showModal, setShowModal] = useState(false)
+
+    const thumbStyles = {
+        height: '50px',
+        width: '75px',
+        margin: '5px',
+        borderRadius: '5px'
+    };
+    const modalStyles = {
+        width: '100%',
+        margin: '5px',
+        borderRadius: '5px'
+    }
 
 
-function SealBeach() {
     return (
         <>
-        <div className="row">
-            
-        <div className="container col-6 float-left row">
+        <div className="row row-cols-2">
+        
+        <div className="col-12 col-md-6 col-lg-6 text-center">
             <h1>
-                SEAL BEACH, CALIFORNIA VACATION HOME
+                SEAL BEACH, CALIFORNIA VACATION HOME 
             </h1>
-            <h2>
+            <h3>
+                4 Bedroom, 5 Bath, 5000 sqft.
+            </h3>
+                <SealBeachCaro />
+            <h4>
                 430 Ocean Ave., Seal Beach, California
-            </h2>
+            </h4>
             <p>
-                Our Seal Beach, California vacation homes will impress you. Breathtaking ocean views and unforgettable sunsets set the stage for this exceptional one-of-a-kind beachfront estate in prime Seal Beach location. This custom home is the pinnacle of luxury and style, with a suite of premium amenities. The resort-like, spectacular backyard is sundrenched escape, with a stunning 90-foot lap pool, soothing Jacuzzi, and outdoor bar and BBQ. Marvelously appointed home offers 4 bedrooms and 5.5 baths. Bright airy and truly a serene space, this remarkable estate features a unique and artful leaded glass entry door, premium stone and hardwood flooring, four beautiful fireplaces, elegant architecture details, recessed lighting, walls of sea-view windows and doors, and a sleek gourmet kitchen. This is truly a home like no other.
+                Villas of Mirada is just walking minutes away from Ritz Carlton Hotel. This Tuscan styled San Gorgonio model the largest, with attached casita is at the end of a cul-de-sec, at the highest location, affording the utmost privacy with unmatched views. It is loaded with top-of-the line finishes and upgrades throughout, including a gourmet kitchen worthy of a professional chef! Two stone fireplaces, including one in the covered, outdoor loggia, off of the great room and master. Custom infinity pool and spa look out to gorgeous mountain views and city lights. This is a private, intimate neighborhood located only minutes from Restaurant Row, theatres and shopping. A homeowners dream!
             </p>
-            <h5>Seal Beach Recreation and Relaxation</h5>
-            <p>
-                Seal Beach is in a prime location.  Just to the south of Seal Beach is Huntington Beach (Surf City) and Newport Beach.  Just to the north of Seal Beach you’ll find Long Beach.   There’s nothing like a California beach vacation and there’s nothing like spending it in one of our luxurious Seal Beach vacation homes.  In Seal Beach you’ll enjoy your days on the beach and your nights at the local restaurants, bars and dance clubs.  Seal Beach is one of the best beach vacation spots in the world.  The water is clean and the weather is beautiful.  There’s something to do for everyone.  If you like fine dining there are 4 and 5 star restaurants within driving distance.  If you like to dance the night away there are plenty of live music clubs and bars.  If you like to fish you can take a boat out into the Pacific Ocean and go deep sea fishing or simply grab your pole and fish of the Seal Beach Pier, it’s the second longest pier in California.  Your California vacation wouldn’t be complete without surfing.  Every year Huntington Beach holds the OP professional surfing competition.
-            </p>
-            <h5>Things to do on your California Beach Vacation</h5>
-            <p>
-                The Seal Beach Chamber of Commerce sponsors many events throughout the year.  Some of the events are; Classic Car show in April, a Summer Concert series in July and August, the Fall Kite Festival in September and the Christmas Parade in December. 
-
-                On Electric Avenue where the railroad tracks used to run, there is the Red Car Museum [1] which features a restored Pacific Electric Railway Red Car. The Red Car trolley tracks once passed through Seal Beach going south to the Balboa Peninsula in Newport Beach. Going north into Long Beach you could then take the Red Cars through much of Los Angeles County.
-
-                Seal Beach is also home to the Bay Theatre, a popular venue for independent film and revival screenings.
-            </p>
-            <h5>More things to do near Seal Beach</h5>
-            <p>
-                
-            </p>
-            <h4>California Beaches to Visit</h4>
-            <p>
-                
-            </p>
+            <hr />
         </div>
-        </div>
+        
+        
+            <div className='col-12 col-md-6 col-lg-6 text-center'>
+                
+                <VirtualTour />
+                <hr />
+                <div className='row'>
+                <div className='col-12 col-md-6 col-lg-6 container'>
+                    <h1>Photo Gallery</h1>
+                    <div className='row d-flex justify-content-center'>
+                    {arr.map((img, i) => {
+                        return (
+                            <div key={i}>
+                                <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
+                                    <img className='img-fluid' src={img} style={thumbStyles} />
+                                </a>
+                            </div>
+                        )
+                    })}
+                    </div>
+                    <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
+                        <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
+                    </Modal>
+                </div>
+                </div>
+            </div>
+            <hr />
+        
+    </div>
         </>
     )
 }
-
-export default SealBeach;
