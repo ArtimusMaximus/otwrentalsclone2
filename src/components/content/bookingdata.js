@@ -171,6 +171,30 @@ const lakeArrowPropertyInfo = {
     }
 }
 
+const initialState = {
+    rates: {
+        daily: {
+            price: 'N/A',
+            info: 'N/A'
+        },
+        weekly: {
+            summer: {
+                price: 'N/A',
+                info: 'N/A'
+            },
+            winter: {
+                price: 'N/A',
+                info: 'N/A'
+            }
+        },
+        longTerm: 'N/A',
+        cleaningFee: 'N/A',
+        deposit: {
+            price: 'N/A',
+            info: 'N/A'
+        }
+    }
+}
 export {
     coloriverBookingInfo1,
     coloriverBookingInfo2,
@@ -178,5 +202,6 @@ export {
     sunsetbeachProperty2,
     lakeArrowPropertyInfo,
     ranchoPropertyInfo,
-    sealbeachPropertyInfo
+    sealbeachPropertyInfo,
+    initialState
 }

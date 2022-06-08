@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
 import RanchoCaro from './carousels/RanchoCaro';
+import BookingInfo from './BookingInfo';
 import img0 from "./images/colorado2ndrental/1.jpg"
 import img1 from "./images/colorado2ndrental/2.jpg"
 import img3 from "./images/colorado2ndrental/4.jpg"
@@ -50,7 +51,7 @@ export default () => {
                 <h4>
                     1328 E Dike Rd., Mohave Valley, Mohave County, AZ USA
                 </h4>
-                <a className='btn btn-primary' href={''}>Booking Info</a>
+                <BookingInfo />
                 <p>
                     1328 Dike Rd. is a nice 4000 sqft. home.  It features 4 bedrooms 3 bathrooms, , living room, kitchen and breakfast nook and custom BBQ.  It is equipped with central air and is fully furnished to accommodate any length of stay.  Property features a private dock which can park 2 boats and personal water craft.  Sleeps 12 in beds.
                 </p>

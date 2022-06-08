@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
+import BookingInfo from './BookingInfo';
 import RanchoCaro from './carousels/RanchoCaro'
 import img0 from "./images/sunsetbeachimages/1.webp"
 import img1 from "./images/sunsetbeachimages/10.webp"
@@ -74,7 +75,7 @@ export default () => {
                 <h4>
                     16525 S. Pacific Ave., Sunset Beach
                 </h4>
-                <a className='btn btn-primary' href={''}>Booking Info</a>
+                <BookingInfo />
                 <p>
                     This ground floor is luxuriously appointed 1200sqft 3 bedroom, 2 bathroom oceanfront home with gourmet granite kitchen, dinning area and living room with fireplace.  Unobstructed ocean views from Ranchos Palos Verdes to Santa Catalina Island. Large outdoor patio for relaxing in the sun.
                 </p>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 import {
@@ -8,31 +8,39 @@ import {
     sunsetbeachProperty2,
     ranchoPropertyInfo,
     sealbeachPropertyInfo,
-    lakeArrowPropertyInfo
-        } from './bookingdata';
+    lakeArrowPropertyInfo,
+    initialState } from './bookingdata';
+import { FaCcAmex, FaCcMastercard, FaCcVisa, FaCcDiscover } from 'react-icons/fa'
 
 
 
 export default () => {
     const location = useLocation();
 
-
-
-    const [bookingData, setBookingData] = useState(coloriverBookingInfo1);
+    const [bookingData, setBookingData] = useState(initialState);
     const [showModal, setShowModal] = useState(false);
 
-    const handleClick = () => {
-        return location.pathname === '/coloradoriver1' ? setBookingData(coloriverBookingInfo1) : {}
-    }
+    useEffect(() => {
+        return location.pathname === '/coloradoriver1' ? setBookingData(coloriverBookingInfo1) 
+        : location.pathname === '/coloradoriver2' ? setBookingData(coloriverBookingInfo2)
+        : location.pathname === '/sunsetbeach1' ? setBookingData(sunsetbeachProperty1)
+        : location.pathname === '/sunsetbeach2' ? setBookingData(sunsetbeachProperty2)
+        : location.pathname === '/ranchomirage' ? setBookingData(ranchoPropertyInfo)
+        : location.pathname === '/lakearrowhead' ? setBookingData(lakeArrowPropertyInfo)
+        : location.pathname === '/sealbeach' ? setBookingData(sealbeachPropertyInfo)
+        : setBookingData(initialState)
+    }, [location])
+
 
     return (
         <>
             <a 
                 className='btn btn-primary'
-                onClick={() => {handleClick(); setShowModal(true);}}           
+                style={{color: 'white'}}
+                onClick={() => {setShowModal(true);}}           
             >Booking Info</a>
             <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                <Modal.Body>
+                <Modal.Body onClick={() => setShowModal(false)}>
                         <table className='table table-striped'>
                             <thead>
                                 <tr>
@@ -65,21 +73,21 @@ export default () => {
                                 <tr>
                                     <td>Cleaning Fee</td>
                                     <td>{bookingData.rates.cleaningFee}</td>
-                                    <td>(See fine print below for details)</td>
+                                    <td>*(See below for details)</td>
                                 </tr>
                                 <tr>
                                     <td>Security Deposit</td>
                                     <td>{bookingData.rates.deposit.price}</td>
-                                    <td>(See fine print below for details)</td>
+                                    <td>*(See below for details)</td>
                                 </tr>
                             </tbody>
                         </table>
                         <div className='col-12 d-flex justify-content-center text-center'>
-                            <p>{bookingData.rates.deposit.info}</p>
+                            <p style={{fontSize: '10px'}}>*{bookingData.rates.deposit.info}</p>
                             
                         </div>
                         <div className='row d-flex justify-content-center'>
-                            <p>Forms of payment</p>
+                            <p>{<FaCcMastercard size={75} />} {<FaCcVisa size={75} />} {<FaCcAmex size={75} />} {<FaCcDiscover size={75} />}</p>
                         </div>    
                     </Modal.Body>
             </Modal>

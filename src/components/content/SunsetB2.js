@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
+import BookingInfo from './BookingInfo';
 import RanchoCaro from './carousels/RanchoCaro';
 
 import img0 from "./images/sunset2ndrental/1.webp"
@@ -93,7 +94,7 @@ export default () => {
                 <h4>
                     16525 S. Pacific Ave., Sunset Beach
                 </h4>
-                <a className='btn btn-primary' href={''}>Booking Info</a>
+                <BookingInfo />
                 <p>
                     This home offers an unbelievable 3800 sq ft of space that includes 5 bedrooms and 4.5 baths along with a 2 car garage and an awesome rooftop deck with a fireplace. Four of the bedrooms in the home offer king size beds and the fifth bedroom has 2 sets of bunk beds for the kids. The kitchen is a cooks dream and the dining area has enough seating for everybody in your party.
 
