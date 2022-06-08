@@ -19,12 +19,37 @@
     60% {
         transform: translateY(-12px)
     }
-    
-    
-    
 }
 
 .bounce:hover {
+    cursor: pointer;
+    color:aquamarine;
+}
+
+.bounce2 {
+    animation: bounce 3s infinite;
+    background: none;
+    animation-delay: 3s;
+    z-index: 3;
+}
+
+@keyframes bounce2 {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0)
+    }
+    /* 40% {
+        transform: translateY(-20px)
+    } */
+    60% {
+        transform: translateY(-12px)
+    }
+}
+
+.bounce2:hover {
     cursor: pointer;
     color:aquamarine;
 }

@@ -27,7 +27,7 @@ function Navbar() {
                     <Link className='around' to="/lakearrowhead">Lake Arrowhead</Link>
                     <Link className='around' to="/coloradoriver">Colorado River</Link>
                     <Link className='around' to="/ranchomirage">Rancho Mirage</Link>
-                    <Link className='around' to="/3dtoursvids">Virtual Tours</Link>
+                    {/* <Link className='around' to="/3dtoursvids">Virtual Tours</Link> */}
 
                 </div>
             

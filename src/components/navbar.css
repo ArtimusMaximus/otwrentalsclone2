@@ -17,8 +17,9 @@
     padding-bottom: 8px;
     text-decoration: none;
     color: inherit;
-    border: solid 1px;
-    border-color: black;
+    /* border: solid 1px;
+    border-color: black; */
+    font-weight: 600;
 }
 .around:hover {
     background-color: transparent;
