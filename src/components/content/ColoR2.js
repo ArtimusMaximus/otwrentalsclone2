@@ -50,6 +50,7 @@ export default () => {
                 <h4>
                     1328 E Dike Rd., Mohave Valley, Mohave County, AZ USA
                 </h4>
+                <a className='btn btn-primary' href={''}>Booking Info</a>
                 <p>
                     1328 Dike Rd. is a nice 4000 sqft. home.  It features 4 bedrooms 3 bathrooms, , living room, kitchen and breakfast nook and custom BBQ.  It is equipped with central air and is fully furnished to accommodate any length of stay.  Property features a private dock which can park 2 boats and personal water craft.  Sleeps 12 in beds.
                 </p>

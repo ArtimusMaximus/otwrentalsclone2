@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
 import RanchoCaro from './carousels/RanchoCaro';
+import BookingInfo from './BookingInfo';
 import img0 from "./images/coloradoriverimages/1.webp"
 import img1 from "./images/coloradoriverimages/10.webp"
 import img2 from "./images/coloradoriverimages/11.webp"
@@ -62,6 +63,8 @@ function ColoradoRiver() {
                 <h4>
                     1326 E Dike Rd. Mohave Valley , Arizona
                 </h4>
+                <a className='btn btn-primary' href={''}>Booking Info</a>
+                <BookingInfo />
                 <p>
                     Our Colorado river front vacation rental homes are located minutes from Laughlin, Bullhead City and Lake Havasu in near by Mohave Valley, AZ. This vacation rental property contains park like settings with manicured lawn.  Many palm trees accented with night-lights located throughout grounds.  River rentals also feature private docks with parking for boats and personal water craft.   Both Colorado river rental homes feature central air & heat and are fully furnished including all appliances, washer & dryer, TV’s and outdoor charcoal BBQ.  Homes have an incredible view of the Colorado river and mountains and are located only a few feet from the water. 
                 </p>
