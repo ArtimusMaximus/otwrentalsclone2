@@ -45,7 +45,7 @@ function Navbar() {
                             <Dropdown.Item as={'li'}><Link className='dd' to="/lakearrowhead"><div className='wrap'>Lake Arrowhead</div></Link></Dropdown.Item>
                             <Dropdown.Item as={'li'}><Link className='dd' to="/coloradoriver"><div className='wrap'>Colorado River</div></Link></Dropdown.Item>
                             <Dropdown.Item as={'li'}><Link className='dd' to="/ranchomirage"><div className='wrap'>Rancho Mirage</div></Link></Dropdown.Item>
-                            <Dropdown.Item as={'li'}><Link className='dd' to="/virtualtours"><div className='wrap'>Virtual Tours</div></Link></Dropdown.Item>
+                            {/* <Dropdown.Item as={'li'}><Link className='dd' to="/virtualtours"><div className='wrap'>Virtual Tours</div></Link></Dropdown.Item> */}
                             <Dropdown.Item as={'li'}><Link className='dd' to="/contactinfo"><div className='wrap container-fluid'>Contact Info</div></Link></Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>

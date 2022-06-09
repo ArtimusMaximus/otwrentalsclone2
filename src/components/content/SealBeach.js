@@ -2,6 +2,7 @@ import { Button } from 'bootstrap';
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
+import BookingInfo from './BookingInfo';
 import SealBeachCaro from './carousels/SealBeachCaro';
 import img0 from "./images/sealbeachimages/1.jpg"
 import img1 from "./images/sealbeachimages/10.jpg"
@@ -49,17 +50,17 @@ export default () => {
         <div className="row row-cols-2">
         
         <div className="col-12 col-md-6 col-lg-6 text-center">
-            <h1>
-                SEAL BEACH, CALIFORNIA VACATION HOME 
-            </h1>
             <h3>
-                4 Bedroom, 5 Bath, 5000 sqft.
+                SEAL BEACH, CALIFORNIA VACATION HOME 
             </h3>
-                <SealBeachCaro />
             <h4>
-                430 Ocean Ave., Seal Beach, California
+                4 Bedroom, 5 Bath, 5000 sqft.
             </h4>
-            <a className='btn btn-primary' href={''}>Booking Info</a>
+                <SealBeachCaro />
+            <h5>
+                430 Ocean Ave., Seal Beach, California
+            </h5>
+                <BookingInfo />
             <p>
                 Villas of Mirada is just walking minutes away from Ritz Carlton Hotel. This Tuscan styled San Gorgonio model the largest, with attached casita is at the end of a cul-de-sec, at the highest location, affording the utmost privacy with unmatched views. It is loaded with top-of-the line finishes and upgrades throughout, including a gourmet kitchen worthy of a professional chef! Two stone fireplaces, including one in the covered, outdoor loggia, off of the great room and master. Custom infinity pool and spa look out to gorgeous mountain views and city lights. This is a private, intimate neighborhood located only minutes from Restaurant Row, theatres and shopping. A homeowners dream!
             </p>

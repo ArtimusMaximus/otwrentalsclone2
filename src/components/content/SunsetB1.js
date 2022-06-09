@@ -65,16 +65,16 @@ export default () => {
         <div className="row row-cols-2">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
-                <h1>
-                    BEACHFRONT DREAM HOME
-                </h1>
                 <h3>
-                    3 bedroom 2 bathroom 1200 sqft
+                    BEACHFRONT DREAM HOME
                 </h3>
-                    <RanchoCaro />
                 <h4>
-                    16525 S. Pacific Ave., Sunset Beach
+                    3 bedroom 2 bathroom 1200 sqft
                 </h4>
+                    <RanchoCaro />
+                <h5>
+                    16525 S. Pacific Ave., Sunset Beach
+                </h5>
                 <BookingInfo />
                 <p>
                     This ground floor is luxuriously appointed 1200sqft 3 bedroom, 2 bathroom oceanfront home with gourmet granite kitchen, dinning area and living room with fireplace.  Unobstructed ocean views from Ranchos Palos Verdes to Santa Catalina Island. Large outdoor patio for relaxing in the sun.

@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 import { AiFillFacebook, AiFillYoutube, AiFillTwitterCircle, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
-
+import { BsMailbox } from 'react-icons/bs'
 
 function Footer() {
     return (
@@ -20,7 +20,7 @@ function Footer() {
                     
                     <div className='d-flex justify-content-center col-3 align-items-center text-center'>
                         <ul style={{listStyleType: 'none'}}>
-                            <li><b>Postal Address:</b></li>    
+                            <li className='d-flex align-items-center'><BsMailbox size={25} />{'  '}<b>Postal Address:</b></li>    
                             <li><b>1508 S. Mayflower</b></li>    
                             <li><b>Monrovia, CA 91016</b></li>    
                         </ul>                   

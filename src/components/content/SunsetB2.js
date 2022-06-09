@@ -84,16 +84,16 @@ export default () => {
         <div className="row row-cols-2">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
-                <h1>
-                    Beachfront Masterpiece
-                </h1>
                 <h3>
-                    5 bedroom 4.5 bathroom 3800 sqft
+                    Beachfront Masterpiece
                 </h3>
-                    <RanchoCaro />
                 <h4>
-                    16525 S. Pacific Ave., Sunset Beach
+                    5 bedroom 4.5 bathroom 3800 sqft
                 </h4>
+                    <RanchoCaro />
+                <h5>
+                    16525 S. Pacific Ave., Sunset Beach
+                </h5>
                 <BookingInfo />
                 <p>
                     This home offers an unbelievable 3800 sq ft of space that includes 5 bedrooms and 4.5 baths along with a 2 car garage and an awesome rooftop deck with a fireplace. Four of the bedrooms in the home offer king size beds and the fifth bedroom has 2 sets of bunk beds for the kids. The kitchen is a cooks dream and the dining area has enough seating for everybody in your party.

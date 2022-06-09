@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
+import BookingInfo from './BookingInfo';
 import RanchoCaro from './carousels/RanchoCaro';
 import img0 from "./images/ranchomirageimages/1.jpg"
 import img1 from "./images/ranchomirageimages/10.jpg"
@@ -99,17 +100,17 @@ function RanchoMirage() {
         <div className="row row-cols-2">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
-                <h1>
-                    RANCHO MIRAGE HILLTOP MASTERPIECE 
-                </h1>
                 <h3>
-                    4 bedroom 4 bathroom 3800 sqft
+                    RANCHO MIRAGE HILLTOP MASTERPIECE 
                 </h3>
-                    <RanchoCaro />
                 <h4>
-                    35 Santa Rosa Mountain Lane., Rancho Mirage, California
+                    4 bedroom 4 bathroom 3800 sqft
                 </h4>
-                <a className='btn btn-primary' href={''}>Booking Info</a>
+                    <RanchoCaro />
+                <h5>
+                    35 Santa Rosa Mountain Lane., Rancho Mirage, California
+                </h5>
+                     <BookingInfo />
                 <p>
                     Villas of Mirada is just walking minutes away from Ritz Carlton Hotel. This Tuscan styled San Gorgonio model the largest, with attached casita is at the end of a cul-de-sec, at the highest location, affording the utmost privacy with unmatched views. It is loaded with top-of-the line finishes and upgrades throughout, including a gourmet kitchen worthy of a professional chef! Two stone fireplaces, including one in the covered, outdoor loggia, off of the great room and master. Custom infinity pool and spa look out to gorgeous mountain views and city lights. This is a private, intimate neighborhood located only minutes from Restaurant Row, theatres and shopping. A homeowners dream!
                 </p>

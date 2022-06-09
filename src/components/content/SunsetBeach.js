@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 function SunsetBeach() {
 
     const styles = {
-        height: '225px'
+        height: '225px',
+        width: '100%'
     }
     const figureStyles = {
         overflow: 'hidden',
@@ -23,14 +24,14 @@ function SunsetBeach() {
     return (
         <>
         <div className='row justify-content-center d-flex text-center'>
-                <h1>
-                    SUNSET BEACH VACATION HOMES
-                </h1>
-        </div>
-        <div className='row justify-content-center d-flex'>      
                 <h3>
+                    SUNSET BEACH VACATION HOMES
+                </h3>
+        </div>
+        <div className='row justify-content-center d-flex text-center'>      
+                <h4>
                     16525 S. Pacific Ave., Sunset Beach
-                </h3>  
+                </h4>  
         </div>
         <hr />
         <div className="row">

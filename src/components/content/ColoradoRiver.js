@@ -9,7 +9,8 @@ import img10 from './images/colorado2ndrental/10.jpg';
 export default () => {
     
     const styles = {
-        height: '225px'
+        height: '225px',
+        width: '100%'
     };
     const figureStyles = {
         overflow: 'hidden',
@@ -20,14 +21,14 @@ export default () => {
     return (
         <>
         <div className='row justify-content-center d-flex text-center'>
-                <h1>
-                    COLORADO RIVER VACATION HOMES 
-                </h1>
-        </div>
-        <div className='row justify-content-center d-flex'>      
                 <h3>
+                    COLORADO RIVER VACATION HOMES 
+                </h3>
+        </div>
+        <div className='row justify-content-center d-flex text-center'>      
+                <h4>
                     1326 E Dike Rd. Mohave Valley, Arizona & 1328 E Dike Rd. Mohave Valley, Arizona 
-                </h3>  
+                </h4>  
         </div>
         <div className="row">
             <div className="col-12 col-md-6 col-lg-6 justify-content-center d-flex p-0">
