@@ -14,13 +14,13 @@ export default () => {
     const [matterPortData, setMatterPortData] = useState(null);
     const [videoData, setVideoData] = useState(null);
     const [mpClicked, setmpClicked] = useState(false);
-    const [vidClicked, setvidClicked] = useState(false);
+    
 
     const mpRanchoLink = "https://my.matterport.com/show/?m=ZEdd1jvH29x"
     const sunsetBeachLink1 = "https://my.matterport.com/show/?m=xZK8fEohnrn"
     const sunsetBeachLink2 = "https://my.matterport.com/show/?m=v7rzBd5KLPd"
     const lakeArrowLink = "https://my.matterport.com/show/?m=e79yedmHEa3"
-    const lakeArrowLink2 = "https://my.matterport.com/show/?m=e79yedmHEa3"
+    
 
     const lakeArrowVideo = "";
     const sunsetbeachVideo = "https://www.youtube.com/embed/jxwj9Ux0RpU";
@@ -48,7 +48,7 @@ export default () => {
     const handleVideoClick = () => {
         location.pathname === '/ranchomirage' ? setVideoData(ranchoMirageVideo)
         : location.pathname === '/sunsetbeach1' || location.pathname === '/sunsetbeach2' ? setVideoData(sunsetbeachVideo)
-        : location.pathname === '/lakearrowhead' ? setVideoData(lakeArrowVideo)
+        : location.pathname === '/lakearrowhead' ? setVideoData(noLink)
         : setVideoData(noLink)
     }
 
