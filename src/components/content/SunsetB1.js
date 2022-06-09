@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
 import BookingInfo from './BookingInfo';
-import RanchoCaro from './carousels/RanchoCaro'
+import SunsetCaro1 from './carousels/SunsetCaro1';
 import img0 from "./images/sunsetbeachimages/1.webp"
 import img1 from "./images/sunsetbeachimages/10.webp"
 import img2 from "./images/sunsetbeachimages/11.webp"
@@ -71,7 +71,7 @@ export default () => {
                 <h4>
                     3 bedroom 2 bathroom 1200 sqft
                 </h4>
-                    <RanchoCaro />
+                    <SunsetCaro1 />
                 <h5>
                     16525 S. Pacific Ave., Sunset Beach
                 </h5>

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
-import RanchoCaro from './carousels/RanchoCaro';
 import BookingInfo from './BookingInfo';
 import img0 from "./images/colorado2ndrental/1.jpg"
 import img1 from "./images/colorado2ndrental/2.jpg"
 import img3 from "./images/colorado2ndrental/4.jpg"
 import img5 from "./images/colorado2ndrental/6.jpg"
 import img7 from "./images/colorado2ndrental/8.jpg"
+import ColoCaro2 from './carousels/ColoCaro2';
 
 
 const arr = [
@@ -47,7 +47,7 @@ export default () => {
                 <h3>
                     4 Bedrooms, 3 Baths (Sleeps 12) 4000 sqft.
                 </h3>
-                    <RanchoCaro />
+                    <ColoCaro2 />
                 <h4>
                     1328 E Dike Rd., Mohave Valley, Mohave County, AZ USA
                 </h4>

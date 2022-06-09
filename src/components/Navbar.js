@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import './navbar.css';
 import logo from './content/images/otwlogo.gif';
 import { GoGrabber } from 'react-icons/go';
-import UnopDropdown from 'unop-react-dropdown';
 import Dropdown from 'react-bootstrap/Dropdown'
-import { removeData } from 'jquery';
+
 
 
 function Navbar() {
