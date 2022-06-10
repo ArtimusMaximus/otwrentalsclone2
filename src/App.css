@@ -13,21 +13,7 @@ ul {
   margin-bottom: 100px;
 } 
 
- /* .container {
-  display: flex;
-  flex-direction: column;
-  /* margin-left: 180px; */
-  /* flex-wrap: wrap;
-  align-content: flex-start;
-  margin: 10px;
-  }
- */
-
-/* .pix {
-  background-image: url('../palm-trees-sky-photography-1920x1080.jpg');
-  background-size: 24%;
-  background-repeat: none;
-} */
+ 
 
 
 @media only screen and (max-width: 600px) {
@@ -35,6 +21,7 @@ ul {
     margin-bottom: 0px;
   }
 }
+
 
 
 

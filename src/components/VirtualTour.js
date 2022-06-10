@@ -32,7 +32,7 @@ export default () => {
 
 
     useEffect(() => {
-        console.log(location.pathname)
+        
         // location.pathname === '/ranchomirage' ? setMatterPortData(mpRanchoLink) : null
         setMatterPortData()
     }, [location])

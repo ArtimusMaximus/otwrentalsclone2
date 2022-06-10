@@ -3,26 +3,29 @@ import './footer.css';
 import { AiFillFacebook, AiFillYoutube, AiFillTwitterCircle, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { BsMailbox } from 'react-icons/bs'
 
+
 function Footer() {
     return (
+        
         <footer className="footer d-none d-md-block">
             <div className='container h-100'>
                 <div className='row h-100'>
                 <div className='d-flex justify-content-center align-items-center col-3 text-center'>
-                        <p><a href="mailto:johnny@onthewaterrentals.com"><AiOutlineMail size={50} color={'black'} /></a><a href="mailto:johnny@onthewaterrentals.com"><b>Johnny@OnTheWaterRentals.com</b></a></p>
+                        <p><a href="mailto:johnny@onthewaterrentals.com"><AiOutlineMail size={30} color={'black'} /></a><a href="mailto:johnny@onthewaterrentals.com"><b>Johnny@OnTheWaterRentals.com</b></a></p>
                     </div>
-                    <div className='d-flex justify-content-center align-items-center text-center col-3'>
+                    <div className='d-flex justify-content-center align-items-center col-3'>
                         <ul style={{listStyleType: 'none'}}>
-                            <li><AiOutlinePhone size={25} /><b>626-305-7426</b></li>
+                            <li><AiOutlinePhone size={30} /><b>626-305-7426</b></li>
                             <li><b>F: 626-305-7428</b></li>
                         </ul>    
                     </div>
                     
-                    <div className='d-flex justify-content-center col-3 align-items-center text-center'>
-                        <ul style={{listStyleType: 'none'}}>
-                            <li className='d-flex align-items-center'><BsMailbox size={25} />{'  '}<b>Postal Address:</b></li>    
-                            <li><b>1508 S. Mayflower</b></li>    
-                            <li><b>Monrovia, CA 91016</b></li>    
+                    <div className='d-flex justify-content-center align-items-center col-3'>
+                        <ul style={{listStyleType: 'none', margin: '0px !important'}}>
+                            
+                            <li className='d-flex align-items-center'><BsMailbox size={30} />&nbsp;<b>Postal Address:</b></li>    
+                            <li className='text-center'><b>1508 S. Mayflower</b></li>    
+                            <li className='text-center'><b>Monrovia, CA 91016</b></li>    
                         </ul>                   
                     </div>
                     <div className='d-flex justify-content-center col-3 align-items-center text-center'>
@@ -35,6 +38,7 @@ function Footer() {
                 </div>
             </div>
         </footer>
+        
     )
 }
 

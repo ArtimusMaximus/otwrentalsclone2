@@ -3,6 +3,7 @@ import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
 import BookingInfo from './BookingInfo';
 import SunsetCaro1 from './carousels/SunsetCaro1';
+import './modal.css'
 import img0 from "./images/sunsetbeachimages/1.webp"
 import img1 from "./images/sunsetbeachimages/10.webp"
 import img2 from "./images/sunsetbeachimages/11.webp"
@@ -56,7 +57,10 @@ export default () => {
     const modalStyles = {
         width: '100%',
         margin: '5px',
-        borderRadius: '5px'
+        borderRadius: '5px',
+        paddingRight: '0px !important',
+        marginRight: '0px !important'
+        
     }
 
     return (
