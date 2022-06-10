@@ -2,6 +2,7 @@ import React from 'react';
 import './footer.css';
 import { AiFillFacebook, AiFillYoutube, AiFillTwitterCircle, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { BsMailbox } from 'react-icons/bs'
+import { FaFax } from 'react-icons/fa'
 
 
 function Footer() {
@@ -16,7 +17,7 @@ function Footer() {
                     <div className='d-flex justify-content-center align-items-center col-3'>
                         <ul style={{listStyleType: 'none'}}>
                             <li><AiOutlinePhone size={30} /><b>626-305-7426</b></li>
-                            <li><b>F: 626-305-7428</b></li>
+                            <li><b><FaFax size={23} /> 626-305-7428</b></li>
                         </ul>    
                     </div>
                     
