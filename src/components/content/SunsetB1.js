@@ -4,9 +4,9 @@ import VirtualTour from '../VirtualTour';
 import BookingInfo from './BookingInfo';
 import SunsetCaro1 from './carousels/SunsetCaro1';
 import './modal.css'
-import img0 from "./images/sunsetbeachimages/1.webp"
+import img0 from "./images/sunsetbeachimages/11.webp"
 import img1 from "./images/sunsetbeachimages/10.webp"
-import img2 from "./images/sunsetbeachimages/11.webp"
+import img2 from "./images/sunsetbeachimages/1.webp"
 import img3 from "./images/sunsetbeachimages/12.webp"
 import img4 from "./images/sunsetbeachimages/13.webp"
 import img5 from "./images/sunsetbeachimages/14.webp"
@@ -66,7 +66,7 @@ export default () => {
     return (
 
         <>
-        <div className="row row-cols-2">
+        <div className="row row-cols-2 image-fade-in">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
                 <h4>

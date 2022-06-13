@@ -80,7 +80,7 @@ export default () => {
     return (
 
         <>
-        <div className="row row-cols-2">
+        <div className="row row-cols-2 image-fade-in">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
                 

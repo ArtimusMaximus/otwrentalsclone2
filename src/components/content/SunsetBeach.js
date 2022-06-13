@@ -23,7 +23,7 @@ function SunsetBeach() {
     
     return (
         <>
-        <div className="row m-5 pb-1">
+        <div className="row m-5 pb-1 image-fade-in">
             <div className="col-12 col-md-6 col-lg-6 justify-content-center d-flex">
             
                 <div className="card" style={{width: '36rem'}}>
