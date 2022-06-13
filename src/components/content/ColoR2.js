@@ -41,9 +41,7 @@ export default () => {
         <div className="row row-cols-2">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
-                <h1>
-                    COLORADO RIVER VACATION HOMES 
-                </h1>
+                
                 <h3>
                     4 Bedrooms, 3 Baths (Sleeps 12) 4000 sqft.
                 </h3>
@@ -52,6 +50,10 @@ export default () => {
                     1328 E Dike Rd., Mohave Valley, Mohave County, AZ USA
                 </h4>
                 <BookingInfo />
+                <hr />
+                <h1>
+                    COLORADO RIVER VACATION HOMES 
+                </h1>
                 <p>
                     1328 Dike Rd. is a nice 4000 sqft. home.  It features 4 bedrooms 3 bathrooms, , living room, kitchen and breakfast nook and custom BBQ.  It is equipped with central air and is fully furnished to accommodate any length of stay.  Property features a private dock which can park 2 boats and personal water craft.  Sleeps 12 in beds.
                 </p>

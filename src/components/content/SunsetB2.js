@@ -3,8 +3,8 @@ import { Modal } from 'react-bootstrap';
 import VirtualTour from '../VirtualTour';
 import BookingInfo from './BookingInfo';
 import SunsetCaro2 from './carousels/SunsetCaro2';
-import img0 from "./images/sunset2ndrental/1.webp"
-import img1 from "./images/sunset2ndrental/10.webp"
+import img0 from "./images/sunset2ndrental/10.webp"
+import img1 from "./images/sunset2ndrental/1.webp"
 import img2 from "./images/sunset2ndrental/11.webp"
 import img3 from "./images/sunset2ndrental/12.webp"
 import img4 from "./images/sunset2ndrental/13.webp"
@@ -83,9 +83,7 @@ export default () => {
         <div className="row row-cols-2">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
-                <h3>
-                    Beachfront Masterpiece
-                </h3>
+                
                 <h4>
                     5 bedroom 4.5 bathroom 3800 sqft
                 </h4>
@@ -94,6 +92,10 @@ export default () => {
                     16525 S. Pacific Ave., Sunset Beach
                 </h5>
                 <BookingInfo />
+                <hr />
+                <h3>
+                    Beachfront Masterpiece
+                </h3>
                 <p>
                     This home offers an unbelievable 3800 sq ft of space that includes 5 bedrooms and 4.5 baths along with a 2 car garage and an awesome rooftop deck with a fireplace. Four of the bedrooms in the home offer king size beds and the fifth bedroom has 2 sets of bunk beds for the kids. The kitchen is a cooks dream and the dining area has enough seating for everybody in your party.
 

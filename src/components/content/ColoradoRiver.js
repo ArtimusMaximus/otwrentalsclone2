@@ -20,6 +20,34 @@ export default () => {
     
     return (
         <>
+        
+        <div className="row m-5 p-1">
+            <div className="col-12 col-md-6 col-lg-6 justify-content-center d-flex">
+            <div className="card" style={{width: '36rem'}}>
+                            <Link to="/coloradoriver2" style={{styles}}>
+                                <img className="card-img-top" src={img10} alt="Card image cap" />
+                            </Link>
+                            <div className="card-body">
+                                <h5 className="card-title">Price</h5>
+                                <p className="card-text">4 Bed, 3 Bath</p>
+                                <p className="card-text addr">Mohave Valley, AZ</p>
+                            </div>
+                        </div>
+            </div>
+            <div className='col-12 col-md-6 col-lg-6 justify-content-center d-flex'>
+            <div className="card" style={{width: '36rem'}}>
+                            <Link to="/coloradoriver1" style={{styles}}>
+                                <img className="card-img-top" src={img7} alt="Card image cap" />
+                            </Link>
+                            <div className="card-body">
+                                <h5 className="card-title">Price</h5>
+                                <p className="card-text">3 Bed, 2 Bath</p>
+                                <p className="card-text addr">Mohave Valley, AZ</p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <hr />
         <div className='row justify-content-center d-flex text-center'>
                 <h3>
                     COLORADO RIVER VACATION HOMES 
@@ -27,26 +55,8 @@ export default () => {
         </div>
         <div className='row justify-content-center d-flex text-center'>      
                 <h4>
-                    1326 E Dike Rd. Mohave Valley, Arizona & 1328 E Dike Rd. Mohave Valley, Arizona 
+                    1328 E Dike Rd. Mohave Valley, Arizona & 1326 E Dike Rd. Mohave Valley, Arizona
                 </h4>  
-        </div>
-        <div className="row">
-            <div className="col-12 col-md-6 col-lg-6 justify-content-center d-flex p-0">
-            <Link to="/coloradoriver1">
-                <figure className='m-1' style={figureStyles}>
-                    <figcaption>3 Bedrooms, 2 Baths (Sleeps 10) 1900 sqft.</figcaption>
-                    <img src={img7} style={styles} />
-                </figure>
-            </Link>
-            </div>
-            <div className='col-12 col-md-6 col-lg-6 justify-content-center d-flex p-0'>
-            <Link to="/coloradoriver2">
-                <figure className='m-1' style={figureStyles}>
-                    <figcaption>4 Bedrooms, 3 Baths (Sleeps 12) 4000 sqft.</figcaption>
-                    <img src={img10} style={styles} />
-                </figure>
-            </Link>
-            </div>
         </div>
         </>
     )

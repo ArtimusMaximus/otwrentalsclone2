@@ -17,10 +17,10 @@ function Navbar() {
         <>
         <div className="row navbar">
             <div className='d-flex align-items-center justify-content-center col-lg-12 col-md-6 col-6'>
-                <span className="logo"><img src={logo} style={{margin: '3px'}} /></span>
+                <span className="logo"><Link className="logo-bd" to="/"><img src={logo} style={{paddingRight: '10px'}} /></Link></span>
                 <div className='d-none d-lg-block d-xl-block d-xxl-block align-items-center justify-content-center'>
                 
-                    <Link className='around' to="/">Home</Link>
+                    
                     <Link className='around' to="/sunsetbeach">Sunset Beach</Link>
                     <Link className='around' to="/sealbeach">Seal Beach</Link>
                     <Link className='around' to="/lakearrowhead">Lake Arrowhead</Link>

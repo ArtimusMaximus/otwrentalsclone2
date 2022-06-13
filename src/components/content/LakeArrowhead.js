@@ -83,9 +83,7 @@ function LakeArrowHead() {
         <div className="row row-cols-2">
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
-                <h3>
-                    STUNNING MOUNTAIN LAKEFRONT RETREAT
-                </h3>
+                
                 <h4>
                     4 bedroom 5 1/2 bathroom 3000 sqft
                 </h4>
@@ -94,6 +92,10 @@ function LakeArrowHead() {
                     28961 North Shore Rd., Lake Arrowhead, California
                 </h5>
                     <BookingInfo />
+                <hr />
+                <h3>
+                    STUNNING MOUNTAIN LAKEFRONT RETREAT
+                </h3>
                 <p>
                     PERMITTED and LEGAL Rental. This three-story luxury home is nestled in a gated community upon a lush hillside property. Our home is lakefront with a short 100 yard walk to our own single slip dock. Lake Arrowhead is a private lake. For boat charters and water skiing, BEST option is to make arrangements with Mckenzie Water Ski School and they are fantastic! https://mckenziewaterskischool.com/ They can do boat charters, tours, skiing, wake board..etc!
 

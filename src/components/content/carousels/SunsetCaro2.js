@@ -1,7 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import img0 from "../images/sunset2ndrental/1.webp"
+import img0 from "../images/sunset2ndrental/10.webp"
 import img1 from "../images/sunset2ndrental/2.webp"
 import img2 from "../images/sunset2ndrental/3.webp"
 import img3 from "../images/sunset2ndrental/4.webp"
@@ -10,7 +10,7 @@ import img5 from "../images/sunset2ndrental/6.webp"
 import img6 from "../images/sunset2ndrental/7.webp"
 import img7 from "../images/sunset2ndrental/8.webp"
 import img8 from "../images/sunset2ndrental/9.webp"
-import img9 from "../images/sunset2ndrental/10.webp"
+import img9 from "../images/sunset2ndrental/1.webp"
 import img10 from "../images/sunset2ndrental/11.webp"
 import img11 from "../images/sunset2ndrental/12.webp"
 import img12 from "../images/sunset2ndrental/13.webp"

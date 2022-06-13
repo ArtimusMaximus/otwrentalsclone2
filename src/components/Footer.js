@@ -24,7 +24,7 @@ function Footer() {
                     <div className='d-flex justify-content-center align-items-center col-3'>
                         <ul style={{listStyleType: 'none', margin: '0px !important'}}>
                             
-                            <li className='d-flex align-items-center'><BsMailbox size={30} />&nbsp;<b>Postal Address:</b></li>    
+                            <li className='d-flex align-items-center justify-content-center'><BsMailbox size={30} /></li>    
                             <li className='text-center'><b>1508 S. Mayflower</b></li>    
                             <li className='text-center'><b>Monrovia, CA 91016</b></li>    
                         </ul>                   
