@@ -1,7 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-
+import './carocont.css'
 import img0 from "../images/ranchomirageimages/1.jpg"
 import img1 from "../images/ranchomirageimages/10.jpg"
 import img2 from "../images/ranchomirageimages/11.jpg"
@@ -82,7 +82,7 @@ export default () => {
     ];
 
     const styles = {
-        height: '100%'
+        maxHeight: '360px'
     };
 
     //<div className='col-12 col-md-6 col-lg-6'> removed
@@ -105,7 +105,7 @@ export default () => {
                     arr.map((img, i) => {
                         return (
                             <div key={i}>
-                                <div>
+                                <div className='carocontainer'>
                                     <img src={img} style={styles} />
                                 </div>
                             </div>

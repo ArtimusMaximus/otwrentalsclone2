@@ -1,13 +1,19 @@
 .navbar {
-    height: 155px;
     background-color: #95d6fa; 
     margin: 0px;
     padding: 15px;
-    
+    background: rgb(0,212,255);
+    background: linear-gradient(180deg, rgba(0,212,255,1) 1%, rgba(0,212,255,0.49521884858044163) 52%, rgba(0,212,255,0) 100%);
+    z-index: 3;
 }
+.navbar *>a {
+    font-style: italic;
+    font-weight: 500;
+}
+
 .ulist {
     list-style-type: none;
-    margin-right:55px;
+    margin-right: 55px;
 }
 .around {
     background-color: whitesmoke;
@@ -20,12 +26,14 @@
     /* border: solid 1px;
     border-color: black; */
     font-weight: 600;
+    border: 1px solid whitesmoke;
 }
 .around:hover {
     background-color: transparent;
     text-decoration: none;
     color: whitesmoke;
-    border-color:whitesmoke;
+    
+    border: 1px solid whitesmoke;
 }
 
 .dd {
@@ -60,7 +68,4 @@
 .transparent {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
-}
-.logo-bd {
-    
 }

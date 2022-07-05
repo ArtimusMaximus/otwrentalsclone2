@@ -15,6 +15,7 @@ function Navbar() {
 
     return (
         <>
+        
         <div className="row navbar">
             <div className='d-flex align-items-center justify-content-center col-lg-12 col-md-6 col-6'>
                 <span className="logo"><Link className="logo-bd" to="/"><img src={logo} style={{paddingRight: '10px'}} /></Link></span>
@@ -51,6 +52,7 @@ function Navbar() {
                 </div>
             </div>
         </div>
+        
         </>
     )
 }

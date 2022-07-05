@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ModalBody } from 'react-bootstrap';
+import Pagination from '../Pagination';
 import Modal from 'react-bootstrap/Modal';
 import img0 from "./images/lakearrowimages/1.webp";
 import img1 from "./images/lakearrowimages/10.webp";
@@ -59,7 +59,7 @@ export default () => {
         img36, img37, img38, img39,
         img40
     ]
-
+    
     const [showModal, setShowModal] = useState(false)
     const [modalData, setModalData] = useState(null)
 
@@ -75,8 +75,6 @@ export default () => {
         borderRadius: '5px'
     }
     
-    
-    
     return (
       <>
       <div className="row">
@@ -89,6 +87,7 @@ export default () => {
             </div>
             )
         })}
+        <Pagination totalImgs={arr.length} arr={arr} />
       </div>
       <Modal size="lg" show={showModal} onHide={() => setShowModal(false)} >
           <Modal.Body>{<img src={modalData} style={{modalStyles}} />}</Modal.Body>

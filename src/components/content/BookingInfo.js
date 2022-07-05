@@ -35,8 +35,8 @@ export default () => {
     return (
         <>
             <a 
-                className='btn btn-primary'
-                style={{color: 'white'}}
+                className='btn btn-lg'
+                style={{color: 'white', backgroundColor: '#95d6fa'}}
                 onClick={() => {setShowModal(true);}}           
             >Booking Info</a>
             <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>

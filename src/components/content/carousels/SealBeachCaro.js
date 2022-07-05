@@ -1,15 +1,15 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-
-import img0 from "../images/sealbeachimages/1.jpg"
-import img1 from "../images/sealbeachimages/10.jpg"
+import './carocont.css'
+import img0 from "../images/sealbeachimages/3.jpg"
+import img1 from "../images/sealbeachimages/1.jpg"
 import img2 from "../images/sealbeachimages/11.jpg"
 import img3 from "../images/sealbeachimages/12.jpg"
 import img4 from "../images/sealbeachimages/13.jpg"
 import img5 from "../images/sealbeachimages/14.jpg"
 import img6 from "../images/sealbeachimages/2.jpg"
-import img7 from "../images/sealbeachimages/3.jpg"
+import img7 from "../images/sealbeachimages/10.jpg"
 import img8 from "../images/sealbeachimages/4.jpg"
 import img9 from "../images/sealbeachimages/5.jpg"
 import img10 from "../images/sealbeachimages/6.jpg"
@@ -28,7 +28,8 @@ export default () => {
     ];
 
     const styles = {
-        height: '100%'
+        maxHeight: '360px',
+        minHeight: '360px'
     }
 
     return (
@@ -38,7 +39,7 @@ export default () => {
                         arr.map((img, i) => {
                             return (
                                 <div key={i}>
-                                    <div>
+                                    <div className='carocontainer'>
                                         <img src={img} style={styles} />
                                     </div>
                                 </div>

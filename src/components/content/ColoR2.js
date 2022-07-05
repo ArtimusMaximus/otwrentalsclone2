@@ -1,39 +1,32 @@
-import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
-import VirtualTour from '../VirtualTour';
+import React from 'react';
+import { desc } from './propertyDesc';
+import Pagination from '../Pagination';
+import TextPagi from '../TextPagi';
 import BookingInfo from './BookingInfo';
-import img0 from "./images/colorado2ndrental/1.jpg"
-import img1 from "./images/colorado2ndrental/2.jpg"
-import img3 from "./images/colorado2ndrental/4.jpg"
-import img5 from "./images/colorado2ndrental/6.jpg"
-import img7 from "./images/colorado2ndrental/8.jpg"
+import img0 from "./images/colorado2ndrental/1.jpg";
+import img1 from "./images/colorado2ndrental/2.jpg";
+import img2 from "./images/colorado2ndrental/3.jpg";
+import img3 from "./images/colorado2ndrental/4.jpg";
+import img4 from "./images/colorado2ndrental/5.jpg";
+import img5 from "./images/colorado2ndrental/6.jpg";
+import img6 from "./images/colorado2ndrental/7.jpg";
+import img7 from "./images/colorado2ndrental/8.jpg";
+import img8 from "./images/colorado2ndrental/9.jpg";
+import img9 from "./images/colorado2ndrental/10.jpg";
 import ColoCaro2 from './carousels/ColoCaro2';
 
 
 const arr = [
     img0,  img1,
     img3,  img5, 
-    img7
+    img7, img2,
+    img4, img6,
+    img8, img9
     
 ];
 
 
 export default () => {
-
-    const [modalData, setModalData] = useState(null)
-    const [showModal, setShowModal] = useState(false)
-
-    const thumbStyles = {
-        height: '50px',
-        width: '75px',
-        margin: '5px',
-        borderRadius: '5px'
-    };
-    const modalStyles = {
-        width: '100%',
-        margin: '5px',
-        borderRadius: '5px'
-    }
 
 
     return (
@@ -42,45 +35,30 @@ export default () => {
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
                 
-                <h3>
-                    4 Bedrooms, 3 Baths (Sleeps 12) 4000 sqft.
-                </h3>
+                
                     <ColoCaro2 />
+                <div className='faded'>
+                <h3>
+                    4 Bedrooms, 3 Baths 4000 sqft.
+                </h3>
                 <h4>
-                    1328 E Dike Rd., Mohave Valley, Mohave County, AZ USA
+                    1328 E Dike Rd, Mohave Valley, AZ
                 </h4>
                 <BookingInfo />
                 <hr />
-                <h1>
+                <h5>
                     COLORADO RIVER VACATION HOMES 
-                </h1>
-                <p>
-                    1328 Dike Rd. is a nice 4000 sqft. home.  It features 4 bedrooms 3 bathrooms, , living room, kitchen and breakfast nook and custom BBQ.  It is equipped with central air and is fully furnished to accommodate any length of stay.  Property features a private dock which can park 2 boats and personal water craft.  Sleeps 12 in beds.
-                </p>
+                </h5>
+                <p className='p-2'>
+                    <TextPagi text={desc.coloRiver2Desc} />
+               </p>
+                </div>
                 <hr />
             </div>
                 <div className='col-12 col-md-6 col-lg-6 text-center'>
                     {/* <VirtualTour /> */}
                     <hr />
-                    <div className='row'>
-                        <div className='col-12 col-md-6 col-lg-6 container'>
-                            <h1>Photo Gallery</h1>
-                            <div className='row d-flex justify-content-center'>
-                            {arr.map((img, i) => {
-                                return (
-                                    <div key={i}>
-                                        <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
-                                            <img className='img-fluid' src={img} style={thumbStyles} />
-                                        </a>
-                                    </div>
-                                )
-                            })}
-                            </div>
-                            <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                                <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
-                            </Modal>
-                        </div>
-                    </div>
+                    <Pagination arr={arr} totalImgs={arr.length} />
                 </div>
                 <hr />
             </div>

@@ -67,7 +67,7 @@ export default () => {
         <div className='container text-center'>
             <div className='row'>
                 <div className='col-lg-6 col-md-6 col-12'>
-                    <h2 className='text-center'>Virtual Tour</h2>
+                    <h2 className='text-center faded'>Virtual Tour</h2>
                         <div className='bounce'>
                             <a onClick={() => {handleClick(); setShowModal(true); setmpClicked(true);}}> 
                                 <BiCameraHome size={100} />
@@ -76,7 +76,7 @@ export default () => {
                     </div>
                 
                 <div className='col-lg-6 col-md-6 col-12'>
-                    <h2 className='text-center'>View Video</h2>
+                    <h2 className='text-center faded'>View Video</h2>
                         <div className='bounce2'>
                             <a onClick={() => {handleVideoClick(); setShowModal(true);}}> 
                                 <ImFilm size={100} />

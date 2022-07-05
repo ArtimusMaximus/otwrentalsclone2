@@ -1,26 +1,11 @@
 import React from 'react';
-import Sidebar from '../Sidebar';
-import img2 from './images/sunsetbeachimages/2.webp';
+import img0 from './images/sunsetbeachimages/11.webp'
 import imgtwo from './images/sunset2ndrental/2.webp';
 import { Link } from 'react-router-dom';
 
 
 function SunsetBeach() {
 
-    const styles = {
-        height: '225px',
-        width: '100%'
-    }
-    const figureStyles = {
-        overflow: 'hidden',
-        backgroundSize: 'contain',
-    }
-    const hrStyles = {
-        borderLeft: '1px solid grey',
-        height: '250px',
-        borderStyle: 'inset'
-    }
-    
     return (
         <>
         <div className="row m-5 pb-1 image-fade-in">
@@ -28,7 +13,7 @@ function SunsetBeach() {
             
                 <div className="card" style={{width: '36rem'}}>
                     <Link to="/sunsetbeach1">
-                        <img className="card-img-top" src={img2} alt="Card image cap" />
+                        <img className="card-img-top" src={img0} alt="Card image cap" />
                     </Link>
                     <div className="card-body">
                         <h5 className="card-title">Price</h5>
@@ -55,17 +40,23 @@ function SunsetBeach() {
                 </div>
             </div>
         </div>
+        
+        <div className='faded'>
+            <div className='row justify-content-center d-flex text-center' >
+                    <h3>
+                        SUNSET BEACH VACATION HOMES
+                    </h3>
+            </div>
+            <div className='row justify-content-center d-flex text-center'>      
+                    <h4>
+                        16525 S. Pacific Ave, Sunset Beach
+                    </h4>
+                    
+            </div>
+            
+        </div>
+        <h1>&nbsp;</h1>
         <hr />
-        <div className='row justify-content-center d-flex text-center'>
-                <h3>
-                    SUNSET BEACH VACATION HOMES
-                </h3>
-        </div>
-        <div className='row justify-content-center d-flex text-center'>      
-                <h4>
-                    16525 S. Pacific Ave, Sunset Beach
-                </h4>  
-        </div>
         </>
     )
 }

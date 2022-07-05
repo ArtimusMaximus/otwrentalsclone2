@@ -12,11 +12,6 @@ export default () => {
         height: '225px',
         width: '100%'
     };
-    const figureStyles = {
-        overflow: 'hidden',
-        backgroundSize: 'contain',
-        
-    };
     
     return (
         <>
@@ -47,7 +42,8 @@ export default () => {
                         </div>
             </div>
         </div>
-        <hr />
+        
+        <div className='faded'>
         <div className='row justify-content-center d-flex text-center'>
                 <h3>
                     COLORADO RIVER VACATION HOMES 
@@ -58,6 +54,8 @@ export default () => {
                     1328 E Dike Rd. Mohave Valley, Arizona & 1326 E Dike Rd. Mohave Valley, Arizona
                 </h4>  
         </div>
+        </div>
+        <hr />
         </>
     )
 }

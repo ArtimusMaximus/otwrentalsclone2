@@ -10,15 +10,18 @@ import VirtualTour from './components/VirtualTour';
 function App() {
   return (
     <>
+      
+      <div className='background'>
       <Navbar />
-      <div className="App">
-        
-      <div className="container">
-        <Outlet />
-      </div>  
-        
-      <Footer />
-      </div> 
+        <div className="App">
+          
+          <div className="container" style={{marginBottom: '125px', marginTop: '5px'}}>
+            <Outlet />
+          </div>  
+          
+        <Footer />
+        </div>
+      </div>
     </>
   );
 }

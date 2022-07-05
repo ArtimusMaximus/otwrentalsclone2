@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
+import { desc } from './propertyDesc';
 import VirtualTour from '../VirtualTour';
+import Pagination from '../Pagination';
+import TextPagi from '../TextPagi';
 import BookingInfo from './BookingInfo';
 import RanchoCaro from './carousels/RanchoCaro';
 import img0 from "./images/ranchomirageimages/1.jpg"
@@ -63,6 +65,7 @@ import img56 from "./images/ranchomirageimages/7.jpg"
 import img57 from "./images/ranchomirageimages/8.jpg"
 import img58 from "./images/ranchomirageimages/9.jpg"
 
+
     const arr = [
         img0,  img1,  img2,  img3,  img4,
         img5,  img6,  img7,  img8,  img9,
@@ -80,20 +83,6 @@ import img58 from "./images/ranchomirageimages/9.jpg"
 
 
 function RanchoMirage() {
-    const [modalData, setModalData] = useState(null)
-    const [showModal, setShowModal] = useState(false)
-
-    const thumbStyles = {
-        height: '50px',
-        width: '75px',
-        margin: '5px',
-        borderRadius: '5px'
-    };
-    const modalStyles = {
-        width: '100%',
-        margin: '5px',
-        borderRadius: '5px'
-    }
 
     return (
         <>
@@ -101,21 +90,24 @@ function RanchoMirage() {
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
                 
+                
+                    <RanchoCaro />
+                <div className='faded'>
                 <h4>
                     4 bedroom 4 bathroom 3800 sqft
                 </h4>
-                    <RanchoCaro />
                 <h5>
                     35 Santa Rosa Mountain Lane., Rancho Mirage, California
                 </h5>
                      <BookingInfo />
                 <hr />
-                <h3>
+                <h5>
                     RANCHO MIRAGE HILLTOP MASTERPIECE 
-                </h3>
-                <p>
-                    Villas of Mirada is just walking minutes away from Ritz Carlton Hotel. This Tuscan styled San Gorgonio model the largest, with attached casita is at the end of a cul-de-sec, at the highest location, affording the utmost privacy with unmatched views. It is loaded with top-of-the line finishes and upgrades throughout, including a gourmet kitchen worthy of a professional chef! Two stone fireplaces, including one in the covered, outdoor loggia, off of the great room and master. Custom infinity pool and spa look out to gorgeous mountain views and city lights. This is a private, intimate neighborhood located only minutes from Restaurant Row, theatres and shopping. A homeowners dream!
+                </h5>
+                <p className='p-2'>
+                    <TextPagi text={desc.ranchoDesc} /> 
                 </p>
+                </div>
                 <hr />
             </div>
             
@@ -124,25 +116,7 @@ function RanchoMirage() {
                     
                     <VirtualTour />
                     <hr />
-                    <div className='row'>
-                    <div className='col-12 col-md-6 col-lg-6 container'>
-                        <h1>Photo Gallery</h1>
-                        <div className='row d-flex justify-content-center'>
-                        {arr.map((img, i) => {
-                            return (
-                                <div key={i}>
-                                    <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
-                                        <img className='img-fluid' src={img} style={thumbStyles} />
-                                    </a>
-                                </div>
-                            )
-                        })}
-                        </div>
-                        <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                            <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
-                        </Modal>
-                    </div>
-                    </div>
+                    <Pagination arr={arr} totalImgs={arr.length} />
                 </div>
                 <hr />
             

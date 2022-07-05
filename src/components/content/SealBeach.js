@@ -1,17 +1,18 @@
-import { Button } from 'bootstrap';
+import Pagination from '../Pagination';
+import TextPagi from '../TextPagi';
 import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
+import { desc } from './propertyDesc';
 import VirtualTour from '../VirtualTour';
 import BookingInfo from './BookingInfo';
 import SealBeachCaro from './carousels/SealBeachCaro';
 import img0 from "./images/sealbeachimages/1.jpg"
-import img1 from "./images/sealbeachimages/10.jpg"
+import img1 from "./images/sealbeachimages/3.jpg"
 import img2 from "./images/sealbeachimages/11.jpg"
 import img3 from "./images/sealbeachimages/12.jpg"
 import img4 from "./images/sealbeachimages/13.jpg"
 import img5 from "./images/sealbeachimages/14.jpg"
 import img6 from "./images/sealbeachimages/2.jpg"
-import img7 from "./images/sealbeachimages/3.jpg"
+import img7 from "./images/sealbeachimages/10.jpg"
 import img8 from "./images/sealbeachimages/4.jpg"
 import img9 from "./images/sealbeachimages/5.jpg"
 import img10 from "./images/sealbeachimages/6.jpg"
@@ -29,70 +30,51 @@ const arr = [
 
 export default () => {
 
-    const [modalData, setModalData] = useState(null)
-    const [showModal, setShowModal] = useState(false)
-
-    const thumbStyles = {
-        height: '50px',
-        width: '75px',
-        margin: '5px',
-        borderRadius: '5px'
-    };
-    const modalStyles = {
-        width: '100%',
-        margin: '5px',
-        borderRadius: '5px'
-    }
-
-
     return (
         <>
         <div className="row row-cols-2 image-fade-in">
         
         <div className="col-12 col-md-6 col-lg-6 text-center">
             
-            <h4>
-                4 Bedroom, 5 Bath, 5000 sqft.
-            </h4>
                 <SealBeachCaro />
-            <h5>
-                430 Ocean Ave., Seal Beach, California
-            </h5>
-                <BookingInfo />
+            <div className='faded'>
+            <div className='row m-1'>
+                <div className='text-left col-6'>
+                    <h4>
+                        4 Bedroom, 5 Bath
+                    </h4>
+                    <h5>5000 sqft.</h5>
+                    <h4>
+                        430 Ocean Ave 
+                    </h4>
+                    <h5>Seal&nbsp;Beach, CA</h5>
+                </div>
+                <div className='col-6 p-3'>
+                    <BookingInfo />  
+                    <div className='row'>
+                        <div className='col-12 p-3'>
+                            <a style={{color: 'white', backgroundColor: '#95d6fa'}} type='button' className='btn'>Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr />
-            <h3>
+            <h5>
                 SEAL BEACH, CALIFORNIA VACATION HOME 
-            </h3>
-            <p>
-                Villas of Mirada is just walking minutes away from Ritz Carlton Hotel. This Tuscan styled San Gorgonio model the largest, with attached casita is at the end of a cul-de-sec, at the highest location, affording the utmost privacy with unmatched views. It is loaded with top-of-the line finishes and upgrades throughout, including a gourmet kitchen worthy of a professional chef! Two stone fireplaces, including one in the covered, outdoor loggia, off of the great room and master. Custom infinity pool and spa look out to gorgeous mountain views and city lights. This is a private, intimate neighborhood located only minutes from Restaurant Row, theatres and shopping. A homeowners dream!
-            </p>
+            </h5>
+            <p className='p-2'>
+                <TextPagi text={desc.sealBeachDesc} /> 
+           </p>
+            </div>
             <hr />
         </div>
         
         
             <div className='col-12 col-md-6 col-lg-6 text-center'>
                 
-                {/* <VirtualTour /> */}
+                <VirtualTour />
                 <hr />
-                <div className='row'>
-                <div className='col-12 col-md-6 col-lg-6 container'>
-                    <h1>Photo Gallery</h1>
-                    <div className='row d-flex justify-content-center'>
-                    {arr.map((img, i) => {
-                        return (
-                            <div key={i}>
-                                <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
-                                    <img className='img-fluid' src={img} style={thumbStyles} />
-                                </a>
-                            </div>
-                        )
-                    })}
-                    </div>
-                    <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                        <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
-                    </Modal>
-                </div>
-                </div>
+                <Pagination arr={arr} totalImgs={arr.length} />
             </div>
             <hr />
         

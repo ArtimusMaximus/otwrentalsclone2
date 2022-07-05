@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
-import VirtualTour from '../VirtualTour';
+import { desc } from './propertyDesc';
+import Pagination from '../Pagination';
+import TextPagi from '../TextPagi';
 import BookingInfo from './BookingInfo';
 import img0 from "./images/coloradoriverimages/9.webp"
 import img1 from "./images/coloradoriverimages/10.webp"
@@ -32,20 +33,6 @@ const arr = [
 
 function ColoradoRiver() {
 
-    const [modalData, setModalData] = useState(null)
-    const [showModal, setShowModal] = useState(false)
-
-    const thumbStyles = {
-        height: '50px',
-        width: '75px',
-        margin: '5px',
-        borderRadius: '5px'
-    };
-    const modalStyles = {
-        width: '100%',
-        margin: '5px',
-        borderRadius: '5px'
-    }
 
 
     return (
@@ -54,45 +41,30 @@ function ColoradoRiver() {
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
                 
-                <h4>
-                    3 Bedrooms, 2 Baths (Sleeps 10) 1900 sqft.
-                </h4>
+                
                     <ColoCaro1 />
+                <div className='faded'>
+                <h4>
+                    3 Bedr, 2 Baths 1900 sqft.
+                </h4>
                 <h5>
                     1326 E Dike Rd. Mohave Valley, Arizona
                 </h5>
                 <BookingInfo />
                 <hr />
-                <h3>
+                <h5>
                     COLORADO RIVER VACATION HOMES 
-                </h3>
-                <p>
-                    Our Colorado river front vacation rental homes are located minutes from Laughlin, Bullhead City and Lake Havasu in near by Mohave Valley, AZ. This vacation rental property contains park like settings with manicured lawn.  Many palm trees accented with night-lights located throughout grounds.  River rentals also feature private docks with parking for boats and personal water craft.   Both Colorado river rental homes feature central air & heat and are fully furnished including all appliances, washer & dryer, TV’s and outdoor charcoal BBQ.  Homes have an incredible view of the Colorado river and mountains and are located only a few feet from the water. 
-                </p>
+                </h5>
+                <p className='p-2'>
+                    <TextPagi text={desc.coloRiver1Desc} />
+               </p>
+                </div>
                 <hr />
             </div>
                 <div className='col-12 col-md-6 col-lg-6 text-center'>
                     {/* <VirtualTour /> */}
                     <hr />
-                    <div className='row'>
-                        <div className='col-12 col-md-6 col-lg-6 container'>
-                            <h1>Photo Gallery</h1>
-                            <div className='row d-flex justify-content-center'>
-                            {arr.map((img, i) => {
-                                return (
-                                    <div key={i}>
-                                        <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
-                                            <img className='img-fluid' src={img} style={thumbStyles} />
-                                        </a>
-                                    </div>
-                                )
-                            })}
-                            </div>
-                            <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                                <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
-                            </Modal>
-                        </div>
-                    </div>
+                    <Pagination arr={arr} totalImgs={arr.length} />
                 </div>
                 <hr />
             </div>

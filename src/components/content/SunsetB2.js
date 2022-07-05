@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
+import { desc } from './propertyDesc';
 import VirtualTour from '../VirtualTour';
+import Pagination from '../Pagination';
+import TextPagi from '../TextPagi';
 import BookingInfo from './BookingInfo';
 import SunsetCaro2 from './carousels/SunsetCaro2';
 import img0 from "./images/sunset2ndrental/10.webp"
@@ -46,6 +48,7 @@ import img39 from "./images/sunset2ndrental/8.webp"
 import img40 from "./images/sunset2ndrental/9.webp"
 
 
+
 export default () => {
 
     const arr = [
@@ -65,18 +68,6 @@ export default () => {
     const [modalData, setModalData] = useState(null)
     const [showModal, setShowModal] = useState(false)
 
-    const thumbStyles = {
-        height: '50px',
-        width: '75px',
-        margin: '5px',
-        borderRadius: '5px'
-    };
-    const modalStyles = {
-        width: '100%',
-        margin: '5px',
-        borderRadius: '5px'
-    }
-
     return (
 
         <>
@@ -84,22 +75,24 @@ export default () => {
         
             <div className="col-12 col-md-6 col-lg-6 text-center">
                 
+                
+                    <SunsetCaro2 />
+                <div className='faded'>
                 <h4>
                     5 bedroom 4.5 bathroom 3800 sqft
                 </h4>
-                    <SunsetCaro2 />
                 <h5>
                     16525 S. Pacific Ave., Sunset Beach
                 </h5>
                 <BookingInfo />
                 <hr />
-                <h3>
+                <h5>
                     Beachfront Masterpiece
-                </h3>
-                <p>
-                    This home offers an unbelievable 3800 sq ft of space that includes 5 bedrooms and 4.5 baths along with a 2 car garage and an awesome rooftop deck with a fireplace. Four of the bedrooms in the home offer king size beds and the fifth bedroom has 2 sets of bunk beds for the kids. The kitchen is a cooks dream and the dining area has enough seating for everybody in your party.
-
-                    Whether it's sitting if front of the High Definition Plasma Televisions watching your favorite movie or sporting event or relaxing in front of an evening fire on the rooftop deck, no matter how you choose to unwind from a fun day at the beach this home is the perfect answer. Call today and book your perfect family getaway.</p>
+                </h5>
+                <p className='p-2'>
+                    <TextPagi text={desc.ssb2Desc} />    
+                </p>
+                </div>
                 <hr />
             </div>
             
@@ -108,25 +101,7 @@ export default () => {
                     
                     <VirtualTour />
                     <hr />
-                    <div className='row'>
-                    <div className='col-12 col-md-6 col-lg-6 container'>
-                        <h1>Photo Gallery</h1>
-                        <div className='row d-flex justify-content-center'>
-                        {arr.map((img, i) => {
-                            return (
-                                <div key={i}>
-                                    <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
-                                        <img className='img-fluid' src={img} style={thumbStyles} />
-                                    </a>
-                                </div>
-                            )
-                        })}
-                        </div>
-                        <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                            <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
-                        </Modal>
-                    </div>
-                    </div>
+                    <Pagination arr={arr} totalImgs={arr.length} />
                 </div>
                 <hr />
             

@@ -30,11 +30,11 @@ function Footer() {
                         </ul>                   
                     </div>
                     <div className='d-flex justify-content-center col-3 align-items-center text-center'>
-                    <a href="https://www.facebook.com/OnTheWaterRentals/?ref=ts" target="_blank"><AiFillFacebook size={50} /></a>
+                    <a href="https://www.facebook.com/OnTheWaterRentals/?ref=ts" target="_blank"><AiFillFacebook size={40} color={'black'} /></a>
                     {'  '}
-                    <a href="https://www.youtube.com/user/onthewaterrentals" target="_blank"><AiFillYoutube size={50} color={'red'} /></a>
+                    <a href="https://www.youtube.com/user/onthewaterrentals" target="_blank"><AiFillYoutube size={40} color={'black'} /></a>
                     {'  '}
-                    <a href="https://twitter.com/onwaterrentals" target="_blank"><AiFillTwitterCircle size={50}  /></a>
+                    <a href="https://twitter.com/onwaterrentals" target="_blank"><AiFillTwitterCircle size={40} color={'black'}  /></a>
                     </div>
                 </div>
             </div>

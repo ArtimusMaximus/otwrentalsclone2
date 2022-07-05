@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
+import { desc } from './propertyDesc';
 import VirtualTour from '../VirtualTour';
 import LakeArrowCarousel from './carousels/LakeArrowCarousel';
-
 import img0 from "./images/lakearrowimages/23.webp";
 import img1 from "./images/lakearrowimages/2.webp";
 import img2 from "./images/lakearrowimages/3.webp";
@@ -45,6 +44,9 @@ import img38 from "./images/lakearrowimages/7.webp";
 import img39 from "./images/lakearrowimages/8.webp";
 import img40 from "./images/lakearrowimages/9.webp";
 import BookingInfo from './BookingInfo';
+import LakeArrowImages from './LakeArrowImages';
+import Pagination from '../Pagination';
+import TextPagi from '../TextPagi';
 
     const arr = [
         img0,  img1,  img2,  img3,
@@ -63,68 +65,36 @@ import BookingInfo from './BookingInfo';
 
 function LakeArrowHead() {
 
-    const [modalData, setModalData] = useState(null)
-    const [showModal, setShowModal] = useState(false)
-
-    const thumbStyles = {
-        height: '50px',
-        width: '75px',
-        margin: '5px',
-        borderRadius: '5px'
-    };
-    const modalStyles = {
-        width: '100%',
-        margin: '5px',
-        borderRadius: '5px'
-    }
-
     return (
         <>
         <div className="row row-cols-2 image-fade-in">
         
-            <div className="col-12 col-md-6 col-lg-6 text-center">
+            <div className="col-12 col-md-6 col-lg-6 text-center mt-2">
                 
+                    <LakeArrowCarousel />
+                
+                <div className='faded'>
                 <h4>
                     4 bedroom 5 1/2 bathroom 3000 sqft
                 </h4>
-                    <LakeArrowCarousel />
-                <h5>
+                <h5 className='mb-3'>
                     28961 North Shore Rd., Lake Arrowhead, California
                 </h5>
                     <BookingInfo />
                 <hr />
-                <h3>
+                <h5>
                     STUNNING MOUNTAIN LAKEFRONT RETREAT
-                </h3>
-                <p>
-                    PERMITTED and LEGAL Rental. This three-story luxury home is nestled in a gated community upon a lush hillside property. Our home is lakefront with a short 100 yard walk to our own single slip dock. Lake Arrowhead is a private lake. For boat charters and water skiing, BEST option is to make arrangements with Mckenzie Water Ski School and they are fantastic! https://mckenziewaterskischool.com/ They can do boat charters, tours, skiing, wake board..etc!
-
-                    Lake Arrowhead is flourished with trees and breathtaking scenery. This location is perfect for medium to larger-sized families. There is a private wooded path that leads you to a secluded shoreline along Lake Arrowhead. The yard is beautifully maintained complete with two lawn sides, BBQ, and lounging areas. There are multiple balconies allowing you to splendor over the beautifully landscaped grounds. Inside, you have access to a full-size wet bar for spirits. If you enjoy cooking, you can impress friends and family with fancy cuisine cooked up in the executive style kitchen. Afterward, you can play a fun game of Ping-Pong while listening to your favorite music on the central music system. Create a warm ambiance and wind down in the living room beside the fireplace while you watch a movie on the 70” flat screen television. Every aspect of this home offers a plethora of amenities. Be further impressed as this home has an additional sauna and a full-size laundry room. Every restroom has heated floors and every bedroom has its own television and bathroom complete with a rain shower. For additional comfort, each level has its own heat and air control.
+                </h5>
+                <p className='p-2'>
+                    <TextPagi text={desc.lakeArrowDesc} />
                 </p>
+                </div>
                 <hr />
             </div>
                 <div className='col-12 col-md-6 col-lg-6 text-center'>
                     <VirtualTour />
                     <hr />
-                    <div className='row'>
-                    <div className='col-12 col-md-6 col-lg-6 container'>
-                        <h1>Photo Gallery</h1>
-                        <div className='row d-flex justify-content-center'>
-                        {arr.map((img, i) => {
-                            return (
-                                <div key={i}>
-                                    <a className='d-block h-100' onClick={() => {setShowModal(true); setModalData(img)}}>
-                                        <img className='img-fluid' src={img} style={thumbStyles} />
-                                    </a>
-                                </div>
-                            )
-                        })}
-                        </div>
-                        <Modal size="lg" show={showModal} onHide={() => setShowModal(false)}>
-                            <Modal.Body>{<img src={modalData} style={modalStyles} />}</Modal.Body>
-                        </Modal>
-                    </div>
-                    </div>
+                    <Pagination arr={arr} totalImgs={arr.length} />
                 </div>
                 <hr />
         </div>

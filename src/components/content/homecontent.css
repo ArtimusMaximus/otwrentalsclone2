@@ -1,15 +1,39 @@
-.i {
-    
+.otwmobile {
+    display: none !important;
 }
 
 @media only screen and (max-width: 600px) {
-    .i {
-        
+    .otw {
+        display: none !important;
     }
+    .otwmobile {
+        font-size: 72px;
+        font-weight: 600;
+        display: block !important;
+        background-image: url('./images/properbeach.jpg');
+        background-size: cover;
+    }
+    .container {
+        margin-bottom: 15px !important;
+        margin-top: 0px  !important;
+    }
+    .anch {
+        display: inline-block !important;
+    }
+    
 }
 
-.figcap {
-    
+
+
+.rooms {
+    font-style: italic;
+}
+
+.faded {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 5px;
+    min-width: none;
+    padding: 5px;
 }
 
 .img1 {

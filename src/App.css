@@ -3,17 +3,54 @@ ul {
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
 }
+
+h1 {
+  font-family: 'The Nautigal', cursive;
+  font-weight: 700;
+  font-size: 72px;
+}
+h2 {
+  font-family: 'The Nautigal', cursive;
+  font-weight: 400;
+  font-size: 72px;
+}
+
+ h3, h4, h5 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: italic;
+}
+p, a {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
  .App {
-  background-color: whitesmoke;
+  background-color: none;
+  
   height: fit-content;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
-  margin-bottom: 125px;
-} 
+}
 
+/* .background {
+  background-image: url(../src/components/content/images/beachbg.jpg);
+  background-size: 200%;
+  background-position-y: 90%;
+  background-position-x: 50%;
+  opacity: 100%;
+  background-repeat: no-repeat;
+} */
+
+.background {
+  background-image: url(../src/components/content/images/properbeach.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
  
+
+
+
 
 
 @media only screen and (max-width: 600px) {

@@ -7,11 +7,13 @@ import lakearrowhead from './images/homepageimages/lakearrow.jpg'
 import ranchomirage from './images/homepageimages/ranchomirage.jpg'
 import sealbeach from './images/homepageimages/sealbeach.jpg'
 import sunsetb from './images/homepageimages/sunsetb.jpg'
-import img11 from "./images/sunset2ndrental/2.webp"
 import img9 from "./images/sunset2ndrental/18.webp"
-
+import img7 from './images/coloradoriverimages/7.webp';
+import img0 from "./images/sunset2ndrental/10.webp"
+import ssb1 from "./images/sunsetbeachimages/11.webp"
 
 function HomeContent() {
+
     const styles = {
         textDecoration: 'none',
         color: 'black'
@@ -19,7 +21,11 @@ function HomeContent() {
 
     return (
         <>
-        <h1 className='text-center'>On The Water Rentals - Beach Front Properties</h1>
+        <div className='faded' style={{margin: '1rem', borderRadius: '5px', zIndex:'1'}} name={'top'}>
+        <h1 className='text-center d-flex align-items-center justify-content-center otw'>On The Water Rentals - Beach Front Properties</h1>
+        <h2 className='text-center d-flex align-items-center justify-content-center otwmobile'>Beach Front Properties</h2>
+        
+        </div>
                 <div className='row image-fade-in'>
                     <div className='col-12 col-md-6 col-lg-4 d-flex justify-content-center p-1'>
                             <div className="card bx" style={{width: '25rem'}}>
@@ -28,7 +34,7 @@ function HomeContent() {
                             </Link>
                                 <div className="card-body">
                                     <h5 className="card-title">$</h5>
-                                    <p className="card-text">4 Bed, 5 Bath, 5000 sqft.</p>
+                                    <p className="card-text rooms">4 Bed, 5 Bath</p>
                                     <p className="card-text addr">Seal Beach, CA</p>
                                 </div>
                             </div>
@@ -38,11 +44,11 @@ function HomeContent() {
                     <div className='col-12 col-md-6 col-lg-4 d-flex justify-content-center p-1'>
                         <div className="card" style={{width: '25rem'}}>
                                 <Link to="/sunsetbeach1">
-                                <img className="card-img-top" src={sunsetb} alt="Card image cap" style={{height: '14rem'}} />
+                                <img className="card-img-top" src={ssb1} alt="Card image cap" style={{height: '14rem'}} />
                                 </Link>
                                 <div className="card-body">
                                     <h5 className="card-title">$</h5>
-                                    <p className="card-text">3 Bed, 2 Bath</p>
+                                    <p className="card-text rooms">3 Bed, 2 Bath</p>
                                     
                                     <p className="card-text addr">Sunset Beach, CA</p>
                                 </div>
@@ -51,11 +57,11 @@ function HomeContent() {
                     <div className='col-12 col-md-6 col-lg-4 d-flex justify-content-center p-1'>
                         <div className="card" style={{width: '25rem'}}>
                                 <Link to="/sunsetbeach2">
-                                <img className="card-img-top" src={img9} alt="Card image cap" style={{height: '14rem'}} />
+                                <img className="card-img-top" src={img0} alt="Card image cap" style={{height: '14rem'}} />
                                 </Link>
                                 <div className="card-body">
                                     <h5 className="card-title">$</h5>
-                                    <p className="card-text">5 Bed, 4.5 Bath</p>
+                                    <p className="card-text rooms">5 Bed, 4.5 Bath</p>
                                     
                                     <p className="card-text addr">Sunset Beach, CA</p>
                                 </div>
@@ -70,7 +76,7 @@ function HomeContent() {
                             </Link>        
                                 <div className="card-body">
                                     <h5 className="card-title">$</h5>
-                                    <p className="card-text">4 bedroom 4 bathroom 3800 sqft.</p>
+                                    <p className="card-text rooms">4 bedroom 4 bathroom</p>
                                     <p className="card-text addr">Rancho Mirage, CA</p>
                                     
                                 </div>
@@ -83,19 +89,19 @@ function HomeContent() {
                             </Link>    
                                 <div className="card-body">
                                     <h5 className="card-title">$</h5>
-                                    <p className="card-text">4 bedroom 5.5 bathroom</p>
+                                    <p className="card-text rooms">4 bedroom 5.5 bathroom</p>
                                     <p className="card-text addr">Lake Arrowhead, CA</p>
                                 </div>
                         </div>               
                     </div>
                     <div className='col-12 col-md-6 col-lg-4 d-flex justify-content-center p-1'>
                         <div className="card" style={{width: '25rem'}}>
-                            <Link to="/coloradoriver" style={{styles}}>
+                            <Link to="/coloradoriver2" style={{styles}}>
                                 <img className="card-img-top" src={coloradoriver} alt="Card image cap" style={{height: '14rem'}} />
                             </Link>
                             <div className="card-body">
                                 <h5 className="card-title">$</h5>
-                                <p className="card-text">3 Bed, 2 Bath <b>or</b> 4 Bed, 3 Bath</p>
+                                <p className="card-text rooms">4 Bed, 3 Bath</p>
                                 <p className="card-text addr">Mohave Valley, AZ</p>
                             </div>
                         </div>
@@ -104,19 +110,19 @@ function HomeContent() {
                     <div className='col-12 col-md-12 col-lg-12 d-flex justify-content-center p-1'>
                     
                         <div className="card" style={{width: '25rem'}}>
-                            <Link to="/coloradoriver" style={{styles}}>
-                                <img className="card-img-top" src={coloradoriver} alt="Card image cap" style={{height: '14rem'}} />
+                            <Link to="/coloradoriver1" style={{styles}}>
+                                <img className="card-img-top" src={img7} alt="Card image cap" style={{height: '14rem'}} />
                             </Link>
                             <div className="card-body">
                                 <h5 className="card-title">$</h5>
-                                <p className="card-text">3 Bed, 2 Bath <b>or</b> 4 Bed, 3 Bath</p>
+                                <p className="card-text">3 Bed, 2 Bath</p>
                                 <p className="card-text addr">Mohave Valley, AZ</p>
                             </div>
                         </div>
                     
                     </div>
                 </div>
-                <div className='row' style={{backgroundColor: 'white', margin: '25px', borderRadius: '5px'}}>
+                <div className='row faded' style={{margin: '1rem', borderRadius: '5px'}}>
                     <div className="col-12 col-md-12 col-lg-12 text-center">    
                         <h1>
                             Best Beach House Rentals
@@ -129,6 +135,11 @@ function HomeContent() {
                         </p>
                     </div>
                 </div>
+                <div className='d-flex justify-content-center'><a href={'#top'} style={{
+                        textDecoration: 'none', 
+                        color:'black', 
+                        marginBottom: '0 !important'
+                    }}><h2 className='anch' style={{display: 'none'}}>Back To Top</h2></a></div>
             
         </>
     )
